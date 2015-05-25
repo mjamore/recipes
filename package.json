@@ -1,0 +1,14 @@
+{
+  "name": "recipes",
+  "version": "0.0.1",
+  "description": "This is a website that will have all of our family recipes listed with pictures, ingredient lists, and cooking directions.",
+  "author": "Michael Amore <michael.amore@yahoo.com>",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
+}
