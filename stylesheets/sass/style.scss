@@ -1,0 +1,77 @@
+body {
+	// background-color: blue;
+}
+
+li {
+	list-style-type: circle;
+}
+
+.container {
+	> h1 {
+		text-align: center;
+		margin: 50px 0;
+	}
+
+	> form {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.legend {
+		text-align: center;
+		li {
+			display: inline;
+			margin-right: 20px;
+			padding: 10px;
+			border-radius: 5px;
+		}
+		span {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	recipe {
+		display: block;
+		padding: 5px;
+		a {
+			display: block;
+			padding: 30px;
+		}
+		.thumb {
+			width: 50px;
+			height: 50px;
+			float: left;
+			margin-right: 15px;
+		}
+	}
+}
+
+.modal-header span {
+	float: right;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	background: #5CB85C;
+	border: 1px solid #4CAE4C;
+	color: #FFF;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: -10px;
+}
+
+.breakfast {
+	background-color: red;
+}
+.desserts {
+	background-color: orange;
+}
+.entrees {
+	background-color: purple;
+}
+.side {
+	background-color: yellow;
+}
+.breakfast {
+	background-color: red;
+}

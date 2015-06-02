@@ -1,0 +1,21 @@
+<div modal="showModal" close="cancel()">
+	<div class="modal-header">
+		<h4>{{recipes[selectedIndex].name}} <span>{{recipes[selectedIndex].category}}</span></h4>
+	</div>
+	<div class="modal-body">
+		<p><strong>Time:</strong></p>
+		<ul>
+			<li>Prep - {{recipes[selectedIndex].time.prep_time}}</li>
+			<li>Cook - {{recipes[selectedIndex].time.cook_time}}</li>
+			<li>Total - {{recipes[selectedIndex].time.total_time}}</li>
+		</ul>
+		<p><strong>Ingredients:</strong></p>
+		<ul>
+			<li ng-repeat="ingredient in recipes[selectedIndex].ingredients">{{ingredient.quantity}} {{ingredient.measure}} {{ingredient.ingredient}} <span ng-hide="ingredient.preparation == 'N/A'">- {{ingredient.preparation}}</span></li>
+		</ul>
+		<p><strong>Directions:</strong><br> {{recipes[selectedIndex].directions}}</p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary btn-block" ng-click="cancel()">Close</button>
+	</div>
+</div>

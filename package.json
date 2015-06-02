@@ -5,10 +5,14 @@
   "author": "Michael Amore <michael.amore@yahoo.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/mjamore/recipes"
   },
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.8.11"
-  }
+    "gulp": "^3.8.11",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-sass": "^2.0.1",
+    "gulp-watch": "^4.2.4"
+  },
+  "license": "MIT"
 }
