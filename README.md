@@ -19,6 +19,7 @@ To-Do:
 	- render quick filter buttons based on data in the model - loop over getRecipesMetaData().categories
 	- create login system and move model to database - render data on page from db
 	- add ability to add new recipes and edit current recipes
+	- Fix issue where clicking on modal background (.modal) does not change url 
 
 Completed:
 	√ only show 'Tags:' label on search results if tags exists on object

@@ -24,7 +24,6 @@ recipesApp.controller('mainController', ['$scope', '$modal', 'recipesService', f
 
 		modalInstance.result.then(function (selectedItem) {
 			$scope.selected = selectedItem;
-			console.log($scope.selectedItem);
 		}, function () {
 			console.log('Modal dismissed at: ' + new Date());
 		});
@@ -32,7 +31,7 @@ recipesApp.controller('mainController', ['$scope', '$modal', 'recipesService', f
 }]);
 
 
-recipesApp.controller('secondController', ['$scope', '$modalInstance', 'recipes', function($scope, $modalInstance, recipes) {
+recipesApp.controller('secondController', ['$scope', '$modalInstance', 'recipes', '$location', function($scope, $modalInstance, recipes, $location) {
 
 	$scope.selectedIndex = recipes.pop();
 	$scope.recipes = recipes[0];
@@ -43,6 +42,8 @@ recipesApp.controller('secondController', ['$scope', '$modalInstance', 'recipes'
 
 	$scope.cancel = function () {
 		$modalInstance.dismiss('cancel');
+		// fix stupid fucking error where modal popup changes the URL and breaks entire application
+		$location.path('/');
 	};
 }]);
 

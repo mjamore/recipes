@@ -1,25 +1,17 @@
 var recipesApp = angular.module('recipesApp', ['ngRoute', 'ui.bootstrap']);
 
-recipesApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+recipesApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
-
 	.when('/', {
 		templateUrl: 'views/main.html',
 		controller: 'mainController'
 	})
-
 	.when('/login', {
 		templateUrl: 'views/login.html',
 		controller: 'loginController'
 	})
-
 	.otherwise({
 		redirectTo: '/login'
-	});
-
-	$locationProvider.html5Mode({
-		enabled: true,
-		requireBase: true
 	});
 }]);
 
