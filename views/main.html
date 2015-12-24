@@ -1,21 +1,24 @@
 <!-- <div ng-controller="mainController"> -->
-	<h1>Family Recipe Search</h1>
+	<header>
+		<h1>Family Recipe Search</h1>
 
-	<form class="form-inline">
-		<div class="form-group">
-			<div class="input-group">
-				<div class="input-group-addon">
-					<span class="glyphicon glyphicon-search"></span>
+		<form class="form-inline">
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon">
+						<span class="glyphicon glyphicon-search"></span>
+					</div>
+					<input class="form-control" id="user-search" ng-model="userSearch" autofocus>
 				</div>
-				<input class="form-control" id="user-search" ng-model="userSearch" autofocus>
 			</div>
-		</div>
-		<!-- <button type="submit" class="btn btn-primary">Search</button> -->
-	</form>
+			<!-- <button type="submit" class="btn btn-primary">Search</button> -->
+		</form>
+	</header>
 
 	<div class="legend">
 		<h4>Quick Filters</h4>
-		<ul>
+		<ul class="quick-filters">
+			<li class="appetizers"><a href="#" class="btn">Appetizers</a></li>
 			<li class="breakfast"><a href="#" class="btn">Breakfast</a></li>
 			<li class="desserts"><a href="#" class="btn">Desserts</a></li>
 			<li class="entrees"><a href="#" class="btn">Entrees</a></li>

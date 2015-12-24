@@ -23,3 +23,9 @@ To-Do:
 
 Completed:
 	√ only show 'Tags:' label on search results if tags exists on object
+
+Feature Requests;
+	- different users
+		- only the owner of a recipe can modify it
+		- display owner on recipe card
+		- each recipe name + owner will be unique (i.e. Brenda's baked maccaroni, Paul's baked maccaroni, Nancy's baked maccaroni, etc.)

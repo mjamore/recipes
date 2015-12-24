@@ -7,14 +7,17 @@ li {
 }
 
 .container {
-	> h1 {
+	header {
 		text-align: center;
-		margin: 50px 0;
-	}
+		h1 {
+			text-align: center;
+			margin: 50px 0;
+		}
 
-	> form {
-		text-align: center;
-		margin-bottom: 30px;
+		form {
+			text-align: center;
+			margin-bottom: 30px;
+		}
 	}
 
 	.legend {
@@ -32,7 +35,7 @@ li {
 		}
 	}
 
-	recipe {
+	.recipe {
 		display: block;
 		padding: 5px;
 		a {
@@ -48,6 +51,7 @@ li {
 	}
 }
 
+// Modal
 .modal-header span {
 	float: right;
 	text-transform: capitalize;
@@ -60,18 +64,22 @@ li {
 	margin-top: -10px;
 }
 
+// header filters
+.appetizers {
+	background-color: #B1DEFF;
+}
 .breakfast {
-	background-color: red;
+	background-color: #FFD1DC;
 }
 .desserts {
-	background-color: orange;
+	background-color: 	#FFB347;
 }
 .entrees {
-	background-color: purple;
+	background-color: #AEC6CF;
 }
 .side {
-	background-color: yellow;
+	background-color: #FDFD96;
 }
-.breakfast {
-	background-color: red;
+a {
+	color: white;
 }
