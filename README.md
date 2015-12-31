@@ -29,3 +29,14 @@ Feature Requests;
 		- only the owner of a recipe can modify it
 		- display owner on recipe card
 		- each recipe name + owner will be unique (i.e. Brenda's baked maccaroni, Paul's baked maccaroni, Nancy's baked maccaroni, etc.)
+
+
+How to Run Application:
+	- Add the following to /private/etc/apache2/extra/httpd-vhosts.conf:
+		<VirtualHost *:80>
+		    DocumentRoot "/Users/ddcmichaela/Sites/recipes"
+		    ServerName localhost.mjamore.com.recipes
+		</VirtualHost>
+	- Add the following to /etc/hosts
+		127.0.0.1      localhost.mjamore.com.recipes
+	- Go to localhost.mjamore.com.recipes in a web browser

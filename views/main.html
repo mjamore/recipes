@@ -1,4 +1,4 @@
-<!-- <div ng-controller="mainController"> -->
+<div ng-controller="mainController">
 	<header>
 		<h1>Family Recipe Search</h1>
 
@@ -11,7 +11,6 @@
 					<input class="form-control" id="user-search" ng-model="userSearch" autofocus>
 				</div>
 			</div>
-			<!-- <button type="submit" class="btn btn-primary">Search</button> -->
 		</form>
 	</header>
 
@@ -29,4 +28,4 @@
 	<div class="list-group recipes">
 		<recipe ng-repeat="recipe in recipes|filter:userSearch" ng-click="openRecipeModal($event)" data-index="{{$index}}" class="recipe"></recipe>
 	</div>
-<!-- </div> -->
+</div>

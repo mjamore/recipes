@@ -1,6 +1,6 @@
 var recipesApp = angular.module('recipesApp', ['ngRoute', 'ui.bootstrap']);
 
-recipesApp.config(['$routeProvider', function($routeProvider) {
+recipesApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 	.when('/', {
 		templateUrl: 'views/main.html',
@@ -13,6 +13,8 @@ recipesApp.config(['$routeProvider', function($routeProvider) {
 	.otherwise({
 		redirectTo: '/login'
 	});
+
+	$locationProvider.html5Mode(true);
 }]);
 
 recipesApp.directive('recipe', function() {
