@@ -1,8 +1,7 @@
 // CONTROLLERS
-recipesApp.controller('mainController', ['$scope', '$modal', 'recipesService', function($scope, $modal, recipesService) {
+recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService', function($scope, $uibModal, recipesService) {
 
 	$scope.recipes = recipesService.getRecipes();
-	console.log($scope.recipes);
 
 	$scope.items = ['item1', 'item2', 'item3'];
 	$scope.animationsEnabled = true;
@@ -11,7 +10,7 @@ recipesApp.controller('mainController', ['$scope', '$modal', 'recipesService', f
 		var index = $event.target.closest('recipe').dataset.index,
 			returnArray = [$scope.recipes, index];
 
-		var modalInstance = $modal.open({
+		var modalInstance = $uibModal.open({
 			animation: $scope.animationsEnabled,
 			templateUrl: 'directives/recipeModal.html',
 			controller: 'secondController',
@@ -31,7 +30,7 @@ recipesApp.controller('mainController', ['$scope', '$modal', 'recipesService', f
 }]);
 
 
-recipesApp.controller('secondController', ['$scope', '$modalInstance', 'recipes', '$location', function($scope, $modalInstance, recipes, $location) {
+recipesApp.controller('secondController', ['$scope', '$uibModalInstance', 'recipes', '$location', function($scope, $uibModalInstance, recipes, $location) {
 
 	$scope.selectedIndex = recipes.pop();
 	$scope.recipes = recipes[0];
@@ -41,13 +40,10 @@ recipesApp.controller('secondController', ['$scope', '$modalInstance', 'recipes'
 	};
 
 	$scope.cancel = function () {
-		$modalInstance.dismiss('cancel');
-		// fix stupid fucking error where modal popup changes the URL and breaks entire application
-		$location.path('/');
+		$uibModalInstance.dismiss('cancel');
 	};
 }]);
 
 recipesApp.controller('loginController', ['$scope', function($scope) {
-	console.log()
 	$scope.something = 'something';
 }]);
