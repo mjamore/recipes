@@ -6,6 +6,8 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 	$scope.items = ['item1', 'item2', 'item3'];
 	$scope.animationsEnabled = true;
 
+	var $userSearch = angular.element('#user-search');
+
 	$scope.openRecipeModal = function ($event) {
 		var index = $event.target.closest('recipe').dataset.index,
 			returnArray = [$scope.recipes, index];
@@ -29,7 +31,11 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 	};
 
 	$scope.filterRecipes = function($event) {
-		angular.element('#user-search').val($event.target.text).trigger('change');
+		$userSearch.val($event.target.text).trigger('change');
+	}
+
+	$scope.clearSearch = function() {
+		$userSearch.val('').trigger('change');
 	}
 }]);
 
