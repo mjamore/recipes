@@ -18,17 +18,17 @@
 	</header>
 
 	<div class="legend">
-		<h4>Quick Filters</h4>
+		<h3>Quick Filters</h3>
 		<div class="meal-type-filters">
-			<h5>Meal Type</h5>
+			<h4>Meal Type</h4>
 			<ul>
-				<li ng-repeat="category in categories" class="{{category}}"><a href="#" class="btn" ng-click="filterRecipes($event)">{{category}}</a></li>
+				<li ng-repeat="category in categories" class="{{category}}"><a href="#" class="btn btn-info" ng-click="filterRecipes($event)">{{category}}</a></li>
 			</ul>
 		</div>
 		<div class="tag-filters">
-			<h5>Tags</h5>
+			<h4>Tags</h4>
 			<ul>
-				<li ng-repeat="tag in tags"><a href="#" class="btn" ng-click="filterRecipes($event)">{{tag}}</a></li>
+				<li ng-repeat="tag in tags"><a href="#" class="btn btn-info" ng-click="filterRecipes($event)">{{tag}}</a></li>
 			</ul>
 		</div>
 	</div>

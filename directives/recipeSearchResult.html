@@ -3,7 +3,8 @@
 		<img ng-src="{{recipe.images[0]}}" alt="{{recipe.name}} Thumbnail" class="thumb" ng-hide="recipe.images.length == 0">
 	</div>
 	<div class="recipe-body">
-		<h4 class="list-group-item-heading">{{recipe.name}}</h4>
+		<h3 class="list-group-item-heading">{{recipe.name}}</h3>
+		<p class="list-group-item-text">Total Time: {{recipe.time.total_time}}</p>
 		<p class="list-group-item-text">Ingredients:
 			<span ng-repeat="ingredient in recipe.ingredients">{{$first ? '' : $last ? ', ' : ', '}}{{ingredient.ingredient}}</span>
 		</p>

@@ -19,6 +19,10 @@ To-Do:
 	- create login system and move model to database - render data on page from db
 	- add ability to add new recipes and edit current recipes
 	- create new Mongo collections for meal type and tags
+	- Add count of currently filtered/listed recipes
+	- Make sure recipes are sored alphabetically by meal type
+	- Sort tag quick filters alphabetically
+	- Limit meal type for new recipe entries to the meal types that already exist in the database
 
 Completed:
 	√ only show 'Tags:' label on search results if tags exists on object
