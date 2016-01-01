@@ -12,17 +12,18 @@ To-Do:
 		- autoprefixer
 
 	- Get 'X' added to Bootstrap modal window
-	- Remove comma after last word in search results - ingredients/tags
 	- Switch Bootstrap over to Sass
 	- update model to read from MongoDB
 	- learn how to set different meta data for different page
 	- render quick filter buttons based on data in the model - loop over getRecipesMetaData().categories
 	- create login system and move model to database - render data on page from db
 	- add ability to add new recipes and edit current recipes
-	- Fix issue where clicking on modal background (.modal) does not change url 
+	- Make tag filters dynamically generated
 
 Completed:
 	√ only show 'Tags:' label on search results if tags exists on object
+	√ Remove comma after last word in search results - ingredients/tags
+	√ Fix issue where clicking on modal background (.modal) does not change url
 
 Feature Requests;
 	- different users

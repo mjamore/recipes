@@ -19,13 +19,24 @@
 
 	<div class="legend">
 		<h4>Quick Filters</h4>
-		<ul class="quick-filters">
-			<li class="appetizers"><a href="#" class="btn" ng-click="filterRecipes($event)">Appetizers</a></li>
-			<li class="breakfast"><a href="#" class="btn" ng-click="filterRecipes($event)">Breakfast</a></li>
-			<li class="desserts"><a href="#" class="btn" ng-click="filterRecipes($event)">Desserts</a></li>
-			<li class="entrees"><a href="#" class="btn" ng-click="filterRecipes($event)">Entrees</a></li>
-			<li class="side"><a href="#" class="btn" ng-click="filterRecipes($event)">Side Dishes</a></li>
-		</ul>
+		<div class="meal-type-filters">
+			<h5>Meal Type</h5>
+			<ul>
+				<li class="appetizers"><a href="#" class="btn" ng-click="filterRecipes($event)">Appetizers</a></li>
+				<li class="breakfast"><a href="#" class="btn" ng-click="filterRecipes($event)">Breakfast</a></li>
+				<li class="desserts"><a href="#" class="btn" ng-click="filterRecipes($event)">Desserts</a></li>
+				<li class="entrees"><a href="#" class="btn" ng-click="filterRecipes($event)">Entrees</a></li>
+				<li class="side"><a href="#" class="btn" ng-click="filterRecipes($event)">Side Dishes</a></li>
+			</ul>
+		</div>
+		<div class="tag-filters">
+			<h5>Tags</h5>
+			<ul>
+				<li class=""><a href="#" class="btn" ng-click="filterRecipes($event)">Italian</a></li>
+				<li class=""><a href="#" class="btn" ng-click="filterRecipes($event)">Easy</a></li>
+				<li class=""><a href="#" class="btn" ng-click="filterRecipes($event)">Favorites</a></li>
+			</ul>
+		</div>
 	</div>
 
 	<div class="list-group recipes">

@@ -86,6 +86,9 @@ li {
 		}
 		.recipe-body {
 			float: left;
+			span {
+				text-transform: capitalize;
+			}
 		}
 		.recipe-category {
 			@extend .clear-category-btn;

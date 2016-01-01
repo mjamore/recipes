@@ -5,13 +5,11 @@
 	<div class="recipe-body">
 		<h4 class="list-group-item-heading">{{recipe.name}}</h4>
 		<p class="list-group-item-text">Ingredients:
-			<span ng-repeat="ingredient in recipe.ingredients">{{ingredient.ingredient}}, </span>
+			<span ng-repeat="ingredient in recipe.ingredients">{{$first ? '' : $last ? ', ' : ', '}}{{ingredient.ingredient}}</span>
 		</p>
 		<p class="list-group-item-text" ng-hide="recipe.tags.length == 0">Tags:
-			<span ng-repeat="tag in recipe.tags">{{tag}}, </span>
+			<span ng-repeat="tag in recipe.tags">{{$first ? '' : $last ? ', ' : ', '}}{{tag}}</span>
 		</p>
 	</div>
-	<div class="recipe-category">
-		{{recipe.category}}
-	</div>
+	<div class="recipe-category">{{recipe.category}}</div>
 </a>
