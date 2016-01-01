@@ -1,10 +1,17 @@
-<a href="#" class="list-group-item {{recipe.category}}">
-	<img src="" alt="" class="thumb">
-	<h4 class="list-group-item-heading">{{recipe.category|capitalize}}: {{recipe.name}}</h4>
-	<p class="list-group-item-text">Ingredients:
-		<span ng-repeat="ingredient in recipe.ingredients">{{ingredient.ingredient}}, </span>
-	</p>
-	<p class="list-group-item-text" ng-hide="recipe.tags.length == 0">Tags:
-		<span ng-repeat="tag in recipe.tags">{{tag}}, </span>
-	</p>
+<a href="#" class="list-group-item {{recipe.category}} clearfix">
+	<div class="recipe-image">
+		<img src="{{recipe.images[0]}}" ngSrc="{{recipe.images[0]}}" alt="" class="thumb" ng-hide="recipe.images.length == 0">
+	</div>
+	<div class="recipe-body">
+		<h4 class="list-group-item-heading">{{recipe.name}}</h4>
+		<p class="list-group-item-text">Ingredients:
+			<span ng-repeat="ingredient in recipe.ingredients">{{ingredient.ingredient}}, </span>
+		</p>
+		<p class="list-group-item-text" ng-hide="recipe.tags.length == 0">Tags:
+			<span ng-repeat="tag in recipe.tags">{{tag}}, </span>
+		</p>
+	</div>
+	<div class="recipe-category">
+		{{recipe.category}}
+	</div>
 </a>

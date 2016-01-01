@@ -61,7 +61,7 @@ recipesApp.service('recipesService', function() {
 					}
 				],
 				"directions": "Heat oil, add garlic and simmer.  Mash drained artichokes then add to oil and garlic.  Cook about 3 minutes.  Mix bread crumbs, cheese, and beaten eggs together with salt and pepper to taste.  Slowly add the oil, garlic, and artichokes to the cheese and egg mixture and mix thoroughly.  Roll into small balls.  Mix 1 cup bread crumbs and ½ cup parmesan.  Roll balls in mixture, place on cookie sheet.  Bake at 325 degrees for 10 minutes.",
-				"images": []
+				"images": ["http://a.ftscrt.com/static/images/food_groups/fast_food.jpg"]
 			},
 			{
 				"name": "Bacon Cheese Spread",
