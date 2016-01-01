@@ -18,12 +18,13 @@ To-Do:
 	- render quick filter buttons based on data in the model - loop over getRecipesMetaData().categories
 	- create login system and move model to database - render data on page from db
 	- add ability to add new recipes and edit current recipes
-	- Make tag filters dynamically generated
+	- create new Mongo collections for meal type and tags
 
 Completed:
 	√ only show 'Tags:' label on search results if tags exists on object
 	√ Remove comma after last word in search results - ingredients/tags
 	√ Fix issue where clicking on modal background (.modal) does not change url
+	√ Make meal type and tag filters dynamically generated from model
 
 Feature Requests;
 	- different users

@@ -1013,8 +1013,62 @@ recipesApp.service('recipesService', function() {
 				"sugar (white)",
 				"tomatoes crushed",
 				"vanilla (bean)",
-				"vanilla (extract)",
+				"vanilla (extract)"
 			]
 		}
+	}
+
+	this.getCategories = function() {
+		return [
+			"appetizers",
+			"breads",
+			"breakfast",
+			"dessert",
+			"entrees",
+			"side dishes"
+		]
+	}
+
+	this.getTags = function() {
+		return [
+			"favorites",
+			"Italian",
+			"easy"
+		]
+	}
+
+	this.getIngredients = function() {
+		return [
+			"asiago cheese",
+			"baking powder",
+			"basil (fresh)",
+			"bread",
+			"chicken",
+			"chicken bouillion cubes",
+			"cinnamon",
+			"corn",
+			"eggs",
+			"flour (cake)",
+			"garlic",
+			"garlic salt",
+			"ground beef",
+			"mayonnaise",
+			"milk",
+			"mozzarella",
+			"olive oil",
+			"parmesan cheese",
+			"parsley (fresh)",
+			"pasta (jumbo shells)",
+			"pasta (rotini)",
+			"pepper",
+			"raisins",
+			"ricotta cheese",
+			"salt",
+			"sugar (brown)",
+			"sugar (white)",
+			"tomatoes crushed",
+			"vanilla (bean)",
+			"vanilla (extract)"
+		]
 	}
 });

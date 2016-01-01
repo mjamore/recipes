@@ -2,6 +2,8 @@
 recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService', function($scope, $uibModal, recipesService) {
 
 	$scope.recipes = recipesService.getRecipes();
+	$scope.categories = recipesService.getCategories();
+	$scope.tags = recipesService.getTags();
 
 	$scope.items = ['item1', 'item2', 'item3'];
 	$scope.animationsEnabled = true;

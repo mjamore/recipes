@@ -22,19 +22,13 @@
 		<div class="meal-type-filters">
 			<h5>Meal Type</h5>
 			<ul>
-				<li class="appetizers"><a href="#" class="btn" ng-click="filterRecipes($event)">Appetizers</a></li>
-				<li class="breakfast"><a href="#" class="btn" ng-click="filterRecipes($event)">Breakfast</a></li>
-				<li class="desserts"><a href="#" class="btn" ng-click="filterRecipes($event)">Desserts</a></li>
-				<li class="entrees"><a href="#" class="btn" ng-click="filterRecipes($event)">Entrees</a></li>
-				<li class="side"><a href="#" class="btn" ng-click="filterRecipes($event)">Side Dishes</a></li>
+				<li ng-repeat="category in categories" class="{{category}}"><a href="#" class="btn" ng-click="filterRecipes($event)">{{category}}</a></li>
 			</ul>
 		</div>
 		<div class="tag-filters">
 			<h5>Tags</h5>
 			<ul>
-				<li class=""><a href="#" class="btn" ng-click="filterRecipes($event)">Italian</a></li>
-				<li class=""><a href="#" class="btn" ng-click="filterRecipes($event)">Easy</a></li>
-				<li class=""><a href="#" class="btn" ng-click="filterRecipes($event)">Favorites</a></li>
+				<li ng-repeat="tag in tags"><a href="#" class="btn" ng-click="filterRecipes($event)">{{tag}}</a></li>
 			</ul>
 		</div>
 	</div>
