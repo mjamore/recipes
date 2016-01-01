@@ -1,6 +1,6 @@
 <a href="#" class="list-group-item {{recipe.category}} clearfix">
 	<div class="recipe-image">
-		<img src="{{recipe.images[0]}}" ngSrc="{{recipe.images[0]}}" alt="" class="thumb" ng-hide="recipe.images.length == 0">
+		<img ng-src="{{recipe.images[0]}}" alt="{{recipe.name}} Thumbnail" class="thumb" ng-hide="recipe.images.length == 0">
 	</div>
 	<div class="recipe-body">
 		<h4 class="list-group-item-heading">{{recipe.name}}</h4>

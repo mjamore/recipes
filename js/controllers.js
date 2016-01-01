@@ -27,6 +27,10 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 			console.log('Modal dismissed at: ' + new Date());
 		});
 	};
+
+	$scope.filterRecipes = function($event) {
+		angular.element('#user-search').val($event.target.text).trigger('change');
+	}
 }]);
 
 
