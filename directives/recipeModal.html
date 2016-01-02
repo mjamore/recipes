@@ -17,7 +17,7 @@
 		<hr>
 		<p><strong>Ingredients:</strong></p>
 		<ul>
-			<li ng-repeat="ingredient in recipes[selectedIndex].ingredients" class="capitalize">{{ingredient.quantity}} {{ingredient.measure}} {{ingredient.ingredient}} <span ng-hide="ingredient.preparation == 'N/A'">- {{ingredient.preparation}}</span></li>
+			<li ng-repeat="ingredient in recipes[selectedIndex].ingredients" class="capitalize">{{ingredient.quantity}} {{ingredient.measure}} {{ingredient.ingredient}} <span ng-hide="ingredient.preparation == ''">- {{ingredient.preparation}}</span></li>
 		</ul>
 		<hr>
 		<p><strong>Directions:</strong><br>{{recipes[selectedIndex].directions}}</p>

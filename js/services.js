@@ -16,7 +16,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "olive oil",
 						"quantity": "0.75",
 						"measure": "cups",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "eggs",
@@ -34,7 +34,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "seasoned bread crumbs",
 						"quantity": "1",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "artichoke hearts",
@@ -46,19 +46,19 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "parmesan cheese",
 						"quantity": "0.75",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "salt",
-						"quantity": "N/A",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
 					},
 					{
 						"ingredient": "pepper",
-						"quantity": "N/A",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
 					}
 				],
 				"directions": "Heat oil, add garlic and simmer.  Mash drained artichokes then add to oil and garlic.  Cook about 3 minutes.  Mix bread crumbs, cheese, and beaten eggs together with salt and pepper to taste.  Slowly add the oil, garlic, and artichokes to the cheese and egg mixture and mix thoroughly.  Roll into small balls.  Mix 1 cup bread crumbs and ½ cup parmesan.  Roll balls in mixture, place on cookie sheet.  Bake at 325 degrees for 10 minutes.",
@@ -79,7 +79,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "loaf of round bread",
 						"quantity": "16",
 						"measure": "ounces",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "colby cheese",
@@ -97,13 +97,13 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "parmesan cheese",
 						"quantity": "1",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "mayonnaise",
 						"quantity": "1",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "onion",
@@ -142,7 +142,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "Ritz crackers",
 						"quantity": "1",
 						"measure": "sleeve",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "bacon",
@@ -169,7 +169,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "crescent rolls",
 						"quantity": "8",
 						"measure": "ounces",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "onion",
@@ -187,7 +187,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "milk",
 						"quantity": "1",
 						"measure": "teaspoon",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "bacon",
@@ -197,8 +197,8 @@ recipesApp.service('recipesService', function() {
 					},
 					{
 						"ingredient": "parmesan cheese",
-						"quantity": "N/A",
-						"measure": "N/A",
+						"quantity": "",
+						"measure": "",
 						"preparation": "grated"
 					}
 				],
@@ -220,13 +220,13 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "cream",
 						"quantity": "0.5",
 						"measure": "cups",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "light brown sugar",
 						"quantity": "1.25",
 						"measure": "cups",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "pecans",
@@ -238,31 +238,31 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "puff pastry",
 						"quantity": "1",
 						"measure": "sheet",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "butter",
 						"quantity": "0.5",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "light corn syrup",
 						"quantity": "2",
 						"measure": "tablespoons",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "bourbon",
 						"quantity": "1",
 						"measure": "tablespoon",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "brie cheese",
 						"quantity": "10 - 14",
 						"measure": "ounces",
-						"preparation": "N/A"
+						"preparation": ""
 					}
 				],
 				"directions": "Preheat oven to 400 degrees.  Combine cream, butter, 1 cup of brown sugar, and corn syrup in a medium sauce pan over medium heat.   Bring to a boil whisking occasionally.  Cover and boil for one minute.  Uncover and continue to boil for 3 minutes without stirring.  Mix in one cup of chopped pecans.  Cool and then spoon around warm brie.  Stir together ¼ cup of brown sugar, ¼ cup of chopped pecans, and bourbon.  Place puff pastry sheet on a lightly floured surface and roll out fold lines.  Spread pecan mixture in a 5” circle in the center of the pastry.  Place brie on top of pecan mixture.  Wrap pastry around brie, pinching to seal tightly and place on an aluminum foil lined baking sheet.  Bake for 25 minutes or until lightly brown.  Cool for 10 minutes.",
@@ -289,7 +289,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "olive oil",
 						"quantity": "0.25",
 						"measure": "cups",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "gorgonzola cheese",
@@ -300,20 +300,20 @@ recipesApp.service('recipesService', function() {
 					{
 						"ingredient": "pecan halves",
 						"quantity": "36",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"measure": "",
+						"preparation": ""
 					},
 					{
 						"ingredient": "sugar (white)",
 						"quantity": "0.25",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "honey",
 						"quantity": "6",
 						"measure": "tablespoons",
-						"preparation": "N/A"
+						"preparation": ""
 					}
 				],
 				"directions": "Preheat oven to 375 degrees.  Brush bread slices with olive oil.  Bake 10-12 minutes until golden brown and crisp.  Arrange the cheese on the bread. Place a pecan half on top of each slice of cheese.  Bake until the cheese is melted, approximately 3 minutes.  Drizzle the bread with honey.  Place on a serving platter and serve immediately.",
@@ -340,7 +340,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "olive oil",
 						"quantity": "2",
 						"measure": "teaspoons",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "basil leaves",
@@ -351,26 +351,26 @@ recipesApp.service('recipesService', function() {
 					{
 						"ingredient": "baguette bread",
 						"quantity": "1",
-						"measure": "N/A",
+						"measure": "",
 						"preparation": "sliced and toasted"
 					},
 					{
 						"ingredient": "salt",
-						"quantity": "N/A",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
 					},
 					{
 						"ingredient": "pepper",
-						"quantity": "N/A",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
 					},
 					{
 						"ingredient": "garlic powder",
 						"quantity": "0.5",
 						"measure": "teaspoon",
-						"preparation": "N/A"
+						"preparation": ""
 					}
 				],
 				"directions": "In a small bowl, combine the tomatoes, basil, olive oil, and garlic powder.  Mix well to combine.  Season with salt and pepper, to taste.  Spoon tomato mixture onto toasted bread slices and serve.",
@@ -397,19 +397,19 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "Knorr vegetable soup mix",
 						"quantity": "1",
 						"measure": "envelope",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "sour cream",
 						"quantity": "1",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "mayonnaise",
 						"quantity": "1",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "parmesan cheese",
@@ -433,7 +433,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "cayenne pepper",
 						"quantity": "0.25",
 						"measure": "teaspoons",
-						"preparation": "N/A"
+						"preparation": ""
 					}
 				],
 				"directions": "Preheat oven to 350 degrees.  Spray a one-quart casserole with non-stick cooking spray.  In a medium mixing bowl, combine all ingredients.  Place in baking dish and bake for 20 minutes until bubbly and hot.  Serve with club crackers or corn chips.",
@@ -466,19 +466,19 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "colby/jack cheese",
 						"quantity": "4",
 						"measure": "ounces",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "salt",
 						"quantity": "0.5",
 						"measure": "teaspoon",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "Pillsbury pie crust",
 						"quantity": "1",
 						"measure": "box",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "red bell pepper",
@@ -496,19 +496,19 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "cumin",
 						"quantity": "1",
 						"measure": "teaspoon",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "black pepper",
 						"quantity": "1",
 						"measure": "teaspoon",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "water",
-						"quantity": "N/A",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
 					}
 				],
 				"directions": "Preheat oven to 375 degrees.  In a large bowl, combine the chicken, Colby and Monterrey jack cheeses, cream cheese, bell pepper, jalapeno, cumin, salt, and pepper. Remove the pie crusts and roll (on a lightly floured surface) each into a 15-inch circle. Using a 3-inch cookie cutter, cut out rounds. Re-roll dough as needed, making 15 – 20 rounds. Arrange one on a clean, flat surface. Lightly brush the edges of the crust with water. Place 1 heaping teaspoon of filling in the center of the round. Fold the dough over the filling, pressing the edges with a fork to seal. Repeat with remaining rounds. Bake for 15 – 20 minutes until golden brown.  Serve with queso. Empanadas can also be deep fried at 350 degrees for 3 – 5 minutes.",
@@ -535,7 +535,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "green chilies",
 						"quantity": "4",
 						"measure": "cans",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "green onions",
@@ -565,13 +565,13 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "mayonnaise",
 						"quantity": "1",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "sour cream",
 						"quantity": "4",
 						"measure": "ounces",
-						"preparation": "N/A"
+						"preparation": ""
 					}
 				],
 				"directions": "Mix all ingredients in a medium sized bowl.  Refrigerate and allow flavors to meld, approximately 2 hours.  Serve with crackers and chips.",
@@ -592,7 +592,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "vegetable oil",
 						"quantity": "2",
 						"measure": "tablespoons",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "garlic",
@@ -604,19 +604,19 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "parsley",
 						"quantity": "4",
 						"measure": "tablespoons",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "bread crumbs",
 						"quantity": "0.5",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "parmesan cheese",
 						"quantity": "0.75",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "flour",
@@ -634,7 +634,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "lump crab meat",
 						"quantity": "1",
 						"measure": "pound",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "green onions",
@@ -646,7 +646,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "creole mustard mayonnaise",
 						"quantity": "2",
 						"measure": "tablespoons",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "eggs",
@@ -656,8 +656,8 @@ recipesApp.service('recipesService', function() {
 					},
 					{
 						"ingredient": "vegetable oil",
-						"quantity": "N/A",
-						"measure": "N/A",
+						"quantity": "",
+						"measure": "",
 						"preparation": "for frying"
 					}
 				],
@@ -707,21 +707,21 @@ recipesApp.service('recipesService', function() {
 					},
 					{
 						"ingredient": "olive oil",
-						"quantity": "N/A",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
 					},
 					{
 						"ingredient": "salt",
-						"quantity": "N/A",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
 					},
 					{
 						"ingredient": "pepper",
-						"quantity": "N/A",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
 					}
 				],
 				"directions": "In two tablespoons of vegetable oil, sauté onion and garlic until tender.  Remove from heat and cool.  Add crabmeat, parsley, green onions, breadcrumbs, mustard, and parmesan.  Add just enough mayonnaise to bind the ingredients.  Shape into round cakes.  Dredge in seasoned flour, then beaten egg, and then seasoned breadcrumbs.  Fry until golden brown on both sides.  Drain well.",
@@ -748,25 +748,25 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "raisins",
 						"quantity": "0.5",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "cinnamon",
 						"quantity": "1",
 						"measure": "teaspoon",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "salt",
 						"quantity": "0.25",
 						"measure": "teaspoon",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "vanilla (extract)",
 						"quantity": "1",
 						"measure": "teaspoon",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "eggs",
@@ -790,7 +790,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "sugar (white)",
 						"quantity": "0.5",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					}
 				],
 				"directions": "Set oven to 350 degrees. Combine all ingredients. Place into buttered pan and bake for 35 minutes.",
@@ -817,31 +817,31 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "pasta (rotini)",
 						"quantity": "16",
 						"measure": "oz.",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "chicken bouillion cubes",
 						"quantity": "6",
 						"measure": "cubes",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "salt",
-						"quantity": "N/A",
-						"measure": "N/A",
+						"quantity": "",
+						"measure": "",
 						"preparation": "course"
 					},
 					{
 						"ingredient": "pepper",
-						"quantity": "N/A",
-						"measure": "N/A",
+						"quantity": "",
+						"measure": "",
 						"preparation": "course"
 					},
 					{
 						"ingredient": "garlic powder",
-						"quantity": "N/A",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
 					}
 				],
 				"directions": "Set oven to 350 degrees. Season chicken pieces with salt, pepper, and garlic powder and place in oven safe dish. Add bouillion cubes and enough liquid to go half way up chicken. Bake until chicken is cooked (~30 minutes). While chicken is roasting, boil spring macaroni. Serve chicken with cooking liquid over pasta. Top with parmesan.",
@@ -862,7 +862,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "pasta (jumbo shells)",
 						"quantity": "16",
 						"measure": "ounces",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "mozzarella",
@@ -880,7 +880,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "ricotta cheese",
 						"quantity": "1.5",
 						"measure": "pounds",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "parmesan cheese",
@@ -892,7 +892,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "olive oil",
 						"quantity": "2",
 						"measure": "tablespoons",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "onion",
@@ -914,15 +914,15 @@ recipesApp.service('recipesService', function() {
 					},
 					{
 						"ingredient": "salt",
-						"quantity": "N/A",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
 					},
 					{
 						"ingredient": "pepper",
-						"quantity": "N/A",
-						"measure": "N/A",
-						"preparation": "N/A"
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
 					},
 					{
 						"ingredient": "parsley (fresh)",
@@ -955,7 +955,7 @@ recipesApp.service('recipesService', function() {
 						"ingredient": "mayonnaise",
 						"quantity": "0.5",
 						"measure": "cup",
-						"preparation": "N/A"
+						"preparation": ""
 					},
 					{
 						"ingredient": "corn",
