@@ -9,6 +9,7 @@ This is a web application that will have all of our family recipes listed with p
 		- Run unit tests
 		- Minify and concat. JS files
 		- Autoprefixer
+		- Setup gulp-notify - https://www.npmjs.com/package/gulp-notify
 
 	- Switch Bootstrap over to Sass
 	- Update model to read from MongoDB
@@ -23,6 +24,7 @@ This is a web application that will have all of our family recipes listed with p
 	- Fix modal animation
 	- Make stateful modal windows so each recipe with have a unique URL
 	- Gulp doesn't appear to be concatonating CSS/JS into single file
+	- Start serving the index.html from the dist directory.  Will need to have access to the views directory.
 
 
 ### Completed:
@@ -44,7 +46,7 @@ This is a web application that will have all of our family recipes listed with p
 
 
 ### How to Run Application:
-	- Option 2:
+	- Option 1:
 		- Run 'npm install'
 		- Run 'gulp'
 

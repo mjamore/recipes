@@ -53,5 +53,5 @@ gulp.task('watch', ['browserSync', 'sass', 'concat_css'], function() {
 });
 
 gulp.task('default', function() {
-	runSequence(['sass', 'concat_css', 'browserSync', 'watch']);
+	runSequence(['sass', 'concat_css', 'useref', 'browserSync', 'watch']);
 });
