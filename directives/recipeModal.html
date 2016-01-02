@@ -1,21 +1,23 @@
 <div modal="showModal" close="cancel()">
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
-		<h4 class="modal-title">{{recipes[selectedIndex].name}} - {{recipes[selectedIndex].category}}</h4>
+		<h3 class="modal-title capitalize">{{recipes[selectedIndex].name}}</h3>
 	</div>
 	<div class="modal-body">
-		<p><strong>Author:</strong> {{recipes[selectedIndex].author}}</p>
+		<p class="capitalize"><strong>Author:</strong> {{recipes[selectedIndex].author}}</p>
+		<hr>
+		<p class="capitalize"><strong>Category:</strong> {{recipes[selectedIndex].category}}</p>
 		<hr>
 		<p><strong>Time:</strong></p>
 		<ul>
-			<li>Prep - {{recipes[selectedIndex].time.prep_time}}</li>
-			<li>Cook - {{recipes[selectedIndex].time.cook_time}}</li>
-			<li>Total - {{recipes[selectedIndex].time.total_time}}</li>
+			<li class="capitalize">Prep - {{recipes[selectedIndex].time.prep_time}}</li>
+			<li class="capitalize">Cook - {{recipes[selectedIndex].time.cook_time}}</li>
+			<li class="capitalize">Total - {{recipes[selectedIndex].time.total_time}}</li>
 		</ul>
 		<hr>
 		<p><strong>Ingredients:</strong></p>
 		<ul>
-			<li ng-repeat="ingredient in recipes[selectedIndex].ingredients">{{ingredient.quantity}} {{ingredient.measure}} {{ingredient.ingredient}} <span ng-hide="ingredient.preparation == 'N/A'">- {{ingredient.preparation}}</span></li>
+			<li ng-repeat="ingredient in recipes[selectedIndex].ingredients" class="capitalize">{{ingredient.quantity}} {{ingredient.measure}} {{ingredient.ingredient}} <span ng-hide="ingredient.preparation == 'N/A'">- {{ingredient.preparation}}</span></li>
 		</ul>
 		<hr>
 		<p><strong>Directions:</strong><br>{{recipes[selectedIndex].directions}}</p>

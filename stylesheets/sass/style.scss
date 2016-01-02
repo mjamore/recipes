@@ -1,15 +1,15 @@
 // Reusable components
+.capitalize {
+	text-transform: capitalize;
+}
+
 .clear-category-btn {
 	float: right;
-	text-transform: capitalize;
+	@extend capitalize;
 	border: 1px solid #ddd;
 	padding: 10px;
 	border-radius: 5px;
 	margin-top: -10px;
-}
-
-body {
-	// background-color: blue;
 }
 
 li {
@@ -67,9 +67,6 @@ li.no-bullet {
 			width: 20px;
 			height: 20px;
 		}
-		a {
-			text-transform: capitalize;
-		}
 	}
 
 	#clear-search {
@@ -96,23 +93,24 @@ li.no-bullet {
 			}
 		}
 		.recipe-image {
+			float: left;
 			.thumb {
-				float: left;
 				margin-right: 15px;
+				width: 200px;
+				height: 200px;
 			}
 		}
 		.recipe-body {
-			float: left;
 			h3 {
 				text-align: center;
 				margin-bottom: 20px;
 			}
-			span {
-				text-transform: capitalize;
+			> p {
+				margin-bottom: 10px;
 			}
-		}
-		.recipe-category {
-			@extend .clear-category-btn;
+			.heading {
+				font-weight: 700;
+			}
 		}
 	}
 }
@@ -120,7 +118,15 @@ li.no-bullet {
 // Modal
 .modal-header {
 	.modal-title {
-		text-transform: capitalize;
+		text-align: center;
+	}
+	.close {
+		float: none;
+		position: absolute;
+		right: 20px;
+		span {
+			font-size: 30px;
+		}
 	}
 }
 
@@ -138,20 +144,3 @@ li.no-bullet {
 		}
 	}
 }
-
-// header filters
-// .appetizers {
-// 	background-color: #D7EEFF;
-// }
-// .breakfast {
-// 	background-color: #FFD1DC;
-// }
-// .desserts {
-// 	background-color: 	#FFB347;
-// }
-// .entrees {
-// 	background-color: #AEC6CF;
-// }
-// .side {
-// 	background-color: #FDFD96;
-// }
