@@ -11,7 +11,7 @@
 			<span ng-repeat="ingredient in recipe.ingredients">{{$first ? '' : $last ? ', ' : ', '}}{{ingredient.ingredient}}</span>
 		</p>
 		<p class="list-group-item-text" ng-hide="recipe.tags.length == 0"><span class="heading">Tags:</span>
-			<span ng-repeat="tag in recipe.tags">{{$first ? '' : $last ? ', ' : ', '}}{{tag}}</span>
+			<span ng-repeat="tag in recipe.tags|orderBy:'toString()'">{{$first ? '' : $last ? ', ' : ', '}}{{tag}}</span>
 		</p>
 	</div>
 </a>

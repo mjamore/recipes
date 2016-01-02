@@ -2,10 +2,10 @@ recipesApp.service('recipesService', function() {
 	this.getRecipes = function() {
 		return [
 			{
-				"name": "Artichoke Balls",
+				"name": "Aunt Rosalie's Bread Pudding",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
-				"tags": [],
+				"category": "desserts",
+				"tags": ["favorites","easy"],
 				"time": {
 					"prep_time": "10 minutes",
 					"cook_time": "35 minutes",
@@ -13,56 +13,107 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "olive oil",
-						"quantity": "0.75",
+						"ingredient": "bread",
+						"quantity": "4",
 						"measure": "cups",
+						"preparation": "cubed"
+					},
+					{
+						"ingredient": "raisins",
+						"quantity": "0.5",
+						"measure": "cup",
+						"preparation": ""
+					},
+					{
+						"ingredient": "cinnamon",
+						"quantity": "1",
+						"measure": "teaspoon",
+						"preparation": ""
+					},
+					{
+						"ingredient": "salt",
+						"quantity": "0.25",
+						"measure": "teaspoon",
+						"preparation": ""
+					},
+					{
+						"ingredient": "vanilla (extract)",
+						"quantity": "1",
+						"measure": "teaspoon",
 						"preparation": ""
 					},
 					{
 						"ingredient": "eggs",
 						"quantity": "2",
 						"measure": "large",
-						"preparation": "well beaten"
+						"preparation": "beaten"
 					},
 					{
-						"ingredient": "garlic",
-						"quantity": "3",
-						"measure": "cloves",
-						"preparation": "minced"
+						"ingredient": "milk",
+						"quantity": "2",
+						"measure": "cups",
+						"preparation": "scalded"
 					},
 					{
-						"ingredient": "seasoned bread crumbs",
-						"quantity": "1",
+						"ingredient": "butter",
+						"quantity": "0.25",
 						"measure": "cup",
-						"preparation": ""
+						"preparation": "melted"
 					},
 					{
-						"ingredient": "artichoke hearts",
-						"quantity": "9",
-						"measure": "ounces",
-						"preparation": "drained"
-					},
-					{
-						"ingredient": "parmesan cheese",
-						"quantity": "0.75",
+						"ingredient": "sugar (white)",
+						"quantity": "0.5",
 						"measure": "cup",
-						"preparation": ""
-					},
-					{
-						"ingredient": "salt",
-						"quantity": "",
-						"measure": "",
-						"preparation": ""
-					},
-					{
-						"ingredient": "pepper",
-						"quantity": "",
-						"measure": "",
 						"preparation": ""
 					}
 				],
-				"directions": "Heat oil, add garlic and simmer.  Mash drained artichokes then add to oil and garlic.  Cook about 3 minutes.  Mix bread crumbs, cheese, and beaten eggs together with salt and pepper to taste.  Slowly add the oil, garlic, and artichokes to the cheese and egg mixture and mix thoroughly.  Roll into small balls.  Mix 1 cup bread crumbs and ½ cup parmesan.  Roll balls in mixture, place on cookie sheet.  Bake at 325 degrees for 10 minutes.",
-				"images": ["http://bombayoutdoors.com/wp-content/uploads/moroccan-food-lemon-pickle.jpg"]
+				"directions": "Set oven to 350 degrees. Combine all ingredients. Place into buttered pan and bake for 35 minutes.",
+				"images": ["http://www.gannett-cdn.com/-mm-/b075220f3ec7b17175d5f1983afa7784cfb8c8c2/c=137-0-685-548&r=x203&c=200x200/local/-/media/StCloud/2015/02/24/B9316321475Z.1_20150224131207_000_G27A0OCTJ.1-0.jpg"]
+			},
+			{
+				"name": "Cheesy Corn on the Cob",
+				"author": "Brenda Vickery",
+				"category": "side dishes",
+				"tags": ["easy"],
+				"time": {
+					"prep_time": "10 minutes",
+					"cook_time": "20 minutes",
+					"total_time": "30 minutes"
+				},
+				"ingredients":  [
+					{
+						"ingredient": "mayonnaise",
+						"quantity": "0.5",
+						"measure": "cup",
+						"preparation": ""
+					},
+					{
+						"ingredient": "corn",
+						"quantity": "5",
+						"measure": "ears",
+						"preparation": "cleaned, shucked"
+					},
+					{
+						"ingredient": "parmesan cheese",
+						"quantity": "1",
+						"measure": "cup",
+						"preparation": "grated"
+					},
+					{
+						"ingredient": "salt",
+						"quantity": "1",
+						"measure": "teaspoon",
+						"preparation": "course"
+					},
+					{
+						"ingredient": "pepper",
+						"quantity": "1",
+						"measure": "teaspoon",
+						"preparation": "course"
+					}
+				],
+				"directions": "Combine cheese, salt, and pepper in a shallow dish. Brush a thin layer of mayonnaise on the corn. Roll the corn in the cheese mixture. Wrap each in aluminium foil. Grill 10 - 20 minutes until tender.",
+				"images": ["https://s-media-cache-ak0.pinimg.com/236x/1a/4c/0d/1a4c0db03785652481664c9e7d4acfbf.jpg"]
 			},
 			{
 				"name": "Bacon Cheese Spread",
@@ -440,6 +491,69 @@ recipesApp.service('recipesService', function() {
 				"images": ["http://i0.wp.com/www.cookbetterthan.com/wp-content/uploads/2013/05/Finished-Dish-for-FB.jpg?resize=200%2C200"]
 			},
 			{
+				"name": "Artichoke Balls",
+				"author": "Brenda Vickery",
+				"category": "appetizers",
+				"tags": [],
+				"time": {
+					"prep_time": "10 minutes",
+					"cook_time": "35 minutes",
+					"total_time": "45 minutes"
+				},
+				"ingredients":  [
+					{
+						"ingredient": "olive oil",
+						"quantity": "0.75",
+						"measure": "cups",
+						"preparation": ""
+					},
+					{
+						"ingredient": "eggs",
+						"quantity": "2",
+						"measure": "large",
+						"preparation": "well beaten"
+					},
+					{
+						"ingredient": "garlic",
+						"quantity": "3",
+						"measure": "cloves",
+						"preparation": "minced"
+					},
+					{
+						"ingredient": "seasoned bread crumbs",
+						"quantity": "1",
+						"measure": "cup",
+						"preparation": ""
+					},
+					{
+						"ingredient": "artichoke hearts",
+						"quantity": "9",
+						"measure": "ounces",
+						"preparation": "drained"
+					},
+					{
+						"ingredient": "parmesan cheese",
+						"quantity": "0.75",
+						"measure": "cup",
+						"preparation": ""
+					},
+					{
+						"ingredient": "salt",
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
+					},
+					{
+						"ingredient": "pepper",
+						"quantity": "",
+						"measure": "",
+						"preparation": ""
+					}
+				],
+				"directions": "Heat oil, add garlic and simmer.  Mash drained artichokes then add to oil and garlic.  Cook about 3 minutes.  Mix bread crumbs, cheese, and beaten eggs together with salt and pepper to taste.  Slowly add the oil, garlic, and artichokes to the cheese and egg mixture and mix thoroughly.  Roll into small balls.  Mix 1 cup bread crumbs and ½ cup parmesan.  Roll balls in mixture, place on cookie sheet.  Bake at 325 degrees for 10 minutes.",
+				"images": ["http://bombayoutdoors.com/wp-content/uploads/moroccan-food-lemon-pickle.jpg"]
+			},
+			{
 				"name": "Cheesy Chicken Empanadas",
 				"author": "Brenda Vickery",
 				"category": "appetizers",
@@ -728,75 +842,6 @@ recipesApp.service('recipesService', function() {
 				"images": ["http://ghk.h-cdn.co/assets/cm/15/11/54fdfbbd89e0a-winter-vegetable-chowder-de.jpg"]
 			},
 			{
-				"name": "Aunt Rosalie's Bread Pudding",
-				"author": "Brenda Vickery",
-				"category": "desserts",
-				"tags": ["favorites","easy"],
-				"time": {
-					"prep_time": "10 minutes",
-					"cook_time": "35 minutes",
-					"total_time": "45 minutes"
-				},
-				"ingredients":  [
-					{
-						"ingredient": "bread",
-						"quantity": "4",
-						"measure": "cups",
-						"preparation": "cubed"
-					},
-					{
-						"ingredient": "raisins",
-						"quantity": "0.5",
-						"measure": "cup",
-						"preparation": ""
-					},
-					{
-						"ingredient": "cinnamon",
-						"quantity": "1",
-						"measure": "teaspoon",
-						"preparation": ""
-					},
-					{
-						"ingredient": "salt",
-						"quantity": "0.25",
-						"measure": "teaspoon",
-						"preparation": ""
-					},
-					{
-						"ingredient": "vanilla (extract)",
-						"quantity": "1",
-						"measure": "teaspoon",
-						"preparation": ""
-					},
-					{
-						"ingredient": "eggs",
-						"quantity": "2",
-						"measure": "large",
-						"preparation": "beaten"
-					},
-					{
-						"ingredient": "milk",
-						"quantity": "2",
-						"measure": "cups",
-						"preparation": "scalded"
-					},
-					{
-						"ingredient": "butter",
-						"quantity": "0.25",
-						"measure": "cup",
-						"preparation": "melted"
-					},
-					{
-						"ingredient": "sugar (white)",
-						"quantity": "0.5",
-						"measure": "cup",
-						"preparation": ""
-					}
-				],
-				"directions": "Set oven to 350 degrees. Combine all ingredients. Place into buttered pan and bake for 35 minutes.",
-				"images": ["http://www.gannett-cdn.com/-mm-/b075220f3ec7b17175d5f1983afa7784cfb8c8c2/c=137-0-685-548&r=x203&c=200x200/local/-/media/StCloud/2015/02/24/B9316321475Z.1_20150224131207_000_G27A0OCTJ.1-0.jpg"]
-			},
-			{
 				"name": "Chicken With Spring Macaroni",
 				"author": "Brenda Vickery",
 				"category": "entrees",
@@ -939,51 +984,6 @@ recipesApp.service('recipesService', function() {
 				],
 				"directions": "Preheat oven to 450 degrees. Bring large pot of water to a boil. Add salt and pasta and cook according to the package directions. Drain and cool. Combine riccotta, 1/2 the mozzarella, 1/2 the parmesan, and 1/2 of the asiago. Add the parsley and stir to combine. In a small saucepan over moderate heat, add oil, garlic, and onions. Saute for 5 minutes. Add tomatoes and season with salt and pepper. Simmer for 5 minutes and stir in basil leaves. Pour a little sauce into the bottom of a shallow bakin dish. Fill the shells with the cheese mixture and arrange them seam side down in the baking dish. Top the shells with the remaining sauce, mozzarella, and asiago cheese. Bake 6 - 8 minutes to melt cheese and bubble sauce.",
 				"images": ["https://americantrialattorneys.org/wp-content/uploads/2015/03/PCS4.jpg"]
-			},
-			{
-				"name": "Cheesy Corn on the Cob",
-				"author": "Brenda Vickery",
-				"category": "side dishes",
-				"tags": ["easy"],
-				"time": {
-					"prep_time": "10 minutes",
-					"cook_time": "20 minutes",
-					"total_time": "30 minutes"
-				},
-				"ingredients":  [
-					{
-						"ingredient": "mayonnaise",
-						"quantity": "0.5",
-						"measure": "cup",
-						"preparation": ""
-					},
-					{
-						"ingredient": "corn",
-						"quantity": "5",
-						"measure": "ears",
-						"preparation": "cleaned, shucked"
-					},
-					{
-						"ingredient": "parmesan cheese",
-						"quantity": "1",
-						"measure": "cup",
-						"preparation": "grated"
-					},
-					{
-						"ingredient": "salt",
-						"quantity": "1",
-						"measure": "teaspoon",
-						"preparation": "course"
-					},
-					{
-						"ingredient": "pepper",
-						"quantity": "1",
-						"measure": "teaspoon",
-						"preparation": "course"
-					}
-				],
-				"directions": "Combine cheese, salt, and pepper in a shallow dish. Brush a thin layer of mayonnaise on the corn. Roll the corn in the cheese mixture. Wrap each in aluminium foil. Grill 10 - 20 minutes until tender.",
-				"images": ["https://s-media-cache-ak0.pinimg.com/236x/1a/4c/0d/1a4c0db03785652481664c9e7d4acfbf.jpg"]
 			}
 		]
 	}
@@ -1039,8 +1039,10 @@ recipesApp.service('recipesService', function() {
 			"appetizers",
 			"breads",
 			"breakfast",
-			"dessert",
+			"desserts",
 			"entrees",
+			"miscellaneous",
+			"salads and dressings",
 			"side dishes"
 		]
 	}

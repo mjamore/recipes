@@ -28,12 +28,12 @@
 		<div class="tag-filters">
 			<h4>Tags</h4>
 			<ul>
-				<li ng-repeat="tag in tags"><a href="#" class="btn btn-info capitalize" ng-click="filterRecipes($event)">{{tag}}</a></li>
+				<li ng-repeat="tag in tags|orderBy:'toString()'"><a href="#" class="btn btn-info capitalize" ng-click="filterRecipes($event)">{{tag}}</a></li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="list-group recipes">
-		<recipe ng-repeat="recipe in recipes|filter:userSearch" ng-click="openRecipeModal($event)" data-index="{{$index}}" class="recipe"></recipe>
+		<recipe ng-repeat="recipe in recipes|filter:userSearch|orderBy:['category','name']" ng-click="openRecipeModal($event)" data-index="{{$index}}" class="recipe"></recipe>
 	</div>
 </div>

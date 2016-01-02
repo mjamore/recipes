@@ -18,8 +18,6 @@ This is a web application that will have all of our family recipes listed with p
 	- Add ability to add new recipes and edit current recipes
 	- Create new Mongo collections for category and tags
 	- Add count of currently filtered/listed recipes
-	- Make sure recipes are sorted alphabetically by category
-	- Sort tag quick filters alphabetically
 	- Limit category for new recipe entries to the categories that already exist in the database
 	- Fix modal animation
 	- Make stateful modal windows so each recipe with have a unique URL
@@ -37,6 +35,13 @@ This is a web application that will have all of our family recipes listed with p
 	√ Display owner on recipe card
 	√ Split Sass into separate files
 	√ Setup live reload
+	√ Make sure recipes are sorted alphabetically by category
+	√ Sort tag quick filters alphabetically
+
+
+### Bugs:
+	- When filtering the recipeSearchResults, the index is changing, so the modal shows the wrong recipe.  Additionally, the sorting is causing the same issue.
+	- When using quick filters, make the filter only apply to the category/tag.  Right now it filters by all text within the recipe.
 
 
 ### Feature Requests:
