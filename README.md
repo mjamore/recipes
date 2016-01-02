@@ -23,6 +23,8 @@ To-Do:
 	- Make sure recipes are sored alphabetically by meal type
 	- Sort tag quick filters alphabetically
 	- Limit meal type for new recipe entries to the meal types that already exist in the database
+	- Fix modal animation
+	- Make stateful modal windows so each recipe with have a unique URL
 
 Completed:
 	√ only show 'Tags:' label on search results if tags exists on object

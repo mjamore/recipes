@@ -1,14 +1,15 @@
 // CONTROLLERS
 recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService', function($scope, $uibModal, recipesService) {
 
+	// Cache selectors
+	var $userSearch = angular.element('#user-search');
+
+	// Get data from recipes, categories, and tags from recipesService
 	$scope.recipes = recipesService.getRecipes();
 	$scope.categories = recipesService.getCategories();
 	$scope.tags = recipesService.getTags();
 
-	$scope.items = ['item1', 'item2', 'item3'];
 	$scope.animationsEnabled = true;
-
-	var $userSearch = angular.element('#user-search');
 
 	$scope.openRecipeModal = function ($event) {
 		var index = $event.target.closest('recipe').dataset.index,

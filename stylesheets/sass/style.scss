@@ -109,8 +109,10 @@ li {
 }
 
 // Modal
-.modal-header span {
-	@extend .clear-category-btn;
+.modal-header {
+	.modal-title {
+		text-transform: capitalize;
+	}
 }
 
 // header filters
