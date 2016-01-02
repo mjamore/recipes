@@ -4,6 +4,7 @@
 	</div>
 	<div class="recipe-body">
 		<h3 class="list-group-item-heading">{{recipe.name}}</h3>
+		<p class="list-group-item-text">Author: {{recipe.author}}</p>
 		<p class="list-group-item-text">Total Time: {{recipe.time.total_time}}</p>
 		<p class="list-group-item-text">Ingredients:
 			<span ng-repeat="ingredient in recipe.ingredients">{{$first ? '' : $last ? ', ' : ', '}}{{ingredient.ingredient}}</span>

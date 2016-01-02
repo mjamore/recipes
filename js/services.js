@@ -3,6 +3,7 @@ recipesApp.service('recipesService', function() {
 		return [
 			{
 				"name": "Artichoke Balls",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -65,6 +66,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bacon Cheese Spread",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -121,6 +123,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bacon Crisps",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -153,6 +156,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bacon Swirls",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -203,6 +207,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Brown Sugar Brie with Pecans",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -265,6 +270,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bruschetta with Gorgonzola Cheese and Honey",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -315,6 +321,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bruschetta with Tomatoes and Basil",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -371,6 +378,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Cheesy Baked Spinach and Artichoke Dip",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -433,6 +441,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Cheesy Chicken Empanadas",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -507,6 +516,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Corn Dip",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -569,6 +579,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Crab Cakes",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -655,6 +666,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Guacamole",
+				"author": "Brenda Vickery",
 				"category": "appetizers",
 				"tags": [],
 				"time": {
@@ -717,6 +729,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Aunt Rosalie's Bread Pudding",
+				"author": "Brenda Vickery",
 				"category": "desserts",
 				"tags": ["favorites","easy"],
 				"time": {
@@ -785,6 +798,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Chicken With Spring Macaroni",
+				"author": "Brenda Vickery",
 				"category": "entrees",
 				"tags": ["favorites","easy"],
 				"time": {
@@ -835,6 +849,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "4 Cheese Stuffed Shells",
+				"author": "Brenda Vickery",
 				"category": "entrees",
 				"tags": ["italian","cheese!"],
 				"time": {
@@ -927,6 +942,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Cheesy Corn on the Cob",
+				"author": "Brenda Vickery",
 				"category": "side dishes",
 				"tags": ["easy"],
 				"time": {

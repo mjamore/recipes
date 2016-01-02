@@ -11,7 +11,6 @@ To-Do:
 		- minify and concat. CSS/JS files
 		- autoprefixer
 
-	- Get 'X' added to Bootstrap modal window
 	- Switch Bootstrap over to Sass
 	- update model to read from MongoDB
 	- learn how to set different meta data for different page
@@ -31,6 +30,7 @@ Completed:
 	√ Remove comma after last word in search results - ingredients/tags
 	√ Fix issue where clicking on modal background (.modal) does not change url
 	√ Make meal type and tag filters dynamically generated from model
+	√ Get 'X' added to Bootstrap modal window
 
 Feature Requests;
 	- different users
