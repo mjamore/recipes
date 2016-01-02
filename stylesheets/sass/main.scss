@@ -1,25 +1,4 @@
-// Reusable components
-.capitalize {
-	text-transform: capitalize;
-}
-
-.clear-category-btn {
-	float: right;
-	@extend capitalize;
-	border: 1px solid #ddd;
-	padding: 10px;
-	border-radius: 5px;
-	margin-top: -10px;
-}
-
-li {
-	list-style-type: circle;
-}
-
-li.no-bullet {
-	list-style-type: none
-}
-
+// Styling related to main.html
 .container {
 	header {
 		margin: 0 5px;
@@ -80,60 +59,7 @@ li.no-bullet {
 		z-index: 2;
 		vertical-align: middle;
 	}
-
-	.recipe {
-		display: block;
-		padding: 5px;
-		a {
-			display: block;
-			padding: 30px;
-			&:focus {
-				outline: none;
-				background-color: #FFF;
-			}
-		}
-		.recipe-image {
-			float: left;
-			.thumb {
-				margin-right: 15px;
-				width: 200px;
-				height: 200px;
-			}
-		}
-		.recipe-body {
-			h3 {
-				text-align: center;
-				margin-bottom: 20px;
-			}
-			> p {
-				margin-bottom: 10px;
-			}
-			.heading {
-				font-weight: 700;
-			}
-		}
-	}
 }
-
-// Modal
-.modal-header {
-	.modal-title {
-		text-align: center;
-	}
-	.close {
-		float: none;
-		position: absolute;
-		right: 20px;
-		span {
-			font-size: 30px;
-		}
-	}
-}
-
-.modal-body {
-
-}
-
 
 @media (max-width : 768px) {
 	.container {

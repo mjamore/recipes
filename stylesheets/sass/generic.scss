@@ -1,0 +1,12 @@
+// Generic, reusable components and styling
+.capitalize {
+	text-transform: capitalize;
+}
+
+li {
+	list-style-type: circle;
+}
+
+li.no-bullet {
+	list-style-type: none
+}

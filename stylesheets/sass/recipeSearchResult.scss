@@ -1,0 +1,35 @@
+// Styling for recipeSearchResult.html
+.container {
+	.recipe {
+		display: block;
+		padding: 5px;
+		a {
+			display: block;
+			padding: 30px;
+			&:focus {
+				outline: none;
+				background-color: #FFF;
+			}
+		}
+		.recipe-image {
+			float: left;
+			.thumb {
+				margin-right: 15px;
+				width: 200px;
+				height: 200px;
+			}
+		}
+		.recipe-body {
+			h3 {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			> p {
+				margin-bottom: 10px;
+			}
+			.heading {
+				font-weight: 700;
+			}
+		}
+	}
+}

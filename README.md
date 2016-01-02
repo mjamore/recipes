@@ -6,9 +6,8 @@ This is a web application that will have all of our family recipes listed with p
 	- Get Gulp set up to do other cool shit
 		- Minify HTML - gulp-minify-html
 		- Minify images
-		- Setup live reload
 		- Run unit tests
-		- Minify and concat. CSS/JS files
+		- Minify and concat. JS files
 		- Autoprefixer
 
 	- Switch Bootstrap over to Sass
@@ -23,7 +22,8 @@ This is a web application that will have all of our family recipes listed with p
 	- Limit category for new recipe entries to the categories that already exist in the database
 	- Fix modal animation
 	- Make stateful modal windows so each recipe with have a unique URL
-	- Split Sass into separate files
+	- Gulp doesn't appear to be concatonating CSS/JS into single file
+
 
 ### Completed:
 	√ Only show 'Tags:' label on search results if tags exists on object
@@ -32,20 +32,28 @@ This is a web application that will have all of our family recipes listed with p
 	√ Make category and tag filters dynamically generated from model
 	√ Get 'X' added to Bootstrap modal window
 	√ Render quick filter buttons based on data in the model
+	√ Display owner on recipe card
+	√ Split Sass into separate files
+	√ Setup live reload
+
 
 ### Feature Requests:
 	- Different users
 		- Only the owner of a recipe can modify it
-		- Display owner on recipe card
 		- Each recipe name + owner will be unique (i.e. Brenda's baked maccaroni, Paul's baked maccaroni, Nancy's baked maccaroni, etc.)
 
 
 ### How to Run Application:
-	- Add the following to /private/etc/apache2/extra/httpd-vhosts.conf:
-		<VirtualHost *:80>
-		    DocumentRoot "/Users/ddcmichaela/Sites/recipes"
-		    ServerName localhost.mjamore.com.recipes
-		</VirtualHost>
-	- Add the following to /etc/hosts
-		127.0.0.1      localhost.mjamore.com.recipes
-	- Go to localhost.mjamore.com.recipes in a web browser
+	- Option 2:
+		- Run 'npm install'
+		- Run 'gulp'
+
+	- Option 2:
+		- Add the following to /private/etc/apache2/extra/httpd-vhosts.conf:
+			<VirtualHost *:80>
+			    DocumentRoot "/Users/ddcmichaela/Sites/recipes"
+			    ServerName localhost.mjamore.com.recipes
+			</VirtualHost>
+		- Add the following to /etc/hosts
+			127.0.0.1      localhost.mjamore.com.recipes
+		- Go to localhost.mjamore.com.recipes in a web browser
