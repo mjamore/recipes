@@ -67,7 +67,7 @@ recipesApp.service('recipesService', function() {
 						"preparation": ""
 					}
 				],
-				"directions": "Set oven to 350 degrees. Combine all ingredients. Place into buttered pan and bake for 35 minutes.",
+				"directions": 'Set oven to 350 degrees. Combine all ingredients. Place into buttered pan and bake for 35 minutes. <a href="http://www.youtube.com">YouTube</a>',
 				"images": ["http://www.gannett-cdn.com/-mm-/b075220f3ec7b17175d5f1983afa7784cfb8c8c2/c=137-0-685-548&r=x203&c=200x200/local/-/media/StCloud/2015/02/24/B9316321475Z.1_20150224131207_000_G27A0OCTJ.1-0.jpg"]
 			},
 			{

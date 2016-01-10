@@ -11,14 +11,14 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 
 	$scope.animationsEnabled = true;
 
-	$scope.openRecipeModal = function ($event) {
-		var index = $event.target.closest('recipe').dataset.index,
-			returnArray = [$scope.recipes, index];
+	$scope.openRecipeModal = function (recipe) {
+		var idx = $scope.recipes.indexOf(recipe);
+			returnArray = [$scope.recipes, idx];
 
 		var modalInstance = $uibModal.open({
 			animation: $scope.animationsEnabled,
 			templateUrl: 'directives/recipeModal.html',
-			controller: 'secondController',
+			controller: 'recipeModalController',
 			resolve: {
 				recipes: function () {
 					return returnArray;
@@ -43,8 +43,7 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 }]);
 
 
-recipesApp.controller('secondController', ['$scope', '$uibModalInstance', 'recipes', '$location', function($scope, $uibModalInstance, recipes, $location) {
-
+recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', 'recipes', function($scope, $uibModalInstance, recipes) {
 	$scope.selectedIndex = recipes.pop();
 	$scope.recipes = recipes[0];
 

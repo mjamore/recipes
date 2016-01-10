@@ -23,6 +23,8 @@ This is a web application that will have all of our family recipes listed with p
 	- Make stateful modal windows so each recipe with have a unique URL
 	- Gulp doesn't appear to be concatonating CSS/JS into single file
 	- Start serving the index.html from the dist directory.  Will need to have access to the views directory.
+	- Allow HTML inside of recipes (i.e. inside of recipe directions)
+	- Update view to center title/image when less than 768px
 
 
 ### Completed:
@@ -37,10 +39,10 @@ This is a web application that will have all of our family recipes listed with p
 	√ Setup live reload
 	√ Make sure recipes are sorted alphabetically by category
 	√ Sort tag quick filters alphabetically
+	√ When filtering the recipeSearchResults, the index is changing, so the modal shows the wrong recipe.  Additionally, the sorting is causing the same issue.
 
 
 ### Bugs:
-	- When filtering the recipeSearchResults, the index is changing, so the modal shows the wrong recipe.  Additionally, the sorting is causing the same issue.
 	- When using quick filters, make the filter only apply to the category/tag.  Right now it filters by all text within the recipe.
 
 

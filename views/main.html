@@ -34,6 +34,6 @@
 	</div>
 
 	<div class="list-group recipes">
-		<recipe ng-repeat="recipe in recipes|filter:userSearch|orderBy:['category','name']" ng-click="openRecipeModal($event)" data-index="{{$index}}" class="recipe"></recipe>
+		<recipe ng-repeat="recipe in recipes|filter:userSearch|orderBy:['category','name']" ng-click="openRecipeModal(recipe)" class="recipe"></recipe>
 	</div>
 </div>
