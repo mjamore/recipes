@@ -1,4 +1,4 @@
-<div class="login-modal" modal="showModal" close="cancel()">
+<div class="add-new-recipe-modal" modal="showModal" close="cancel()">
 	<form>
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
@@ -6,40 +6,45 @@
 		</div>
 		<div class="modal-body">
 			<div class="form-group">
-				<label for="recipe-name">Recipe Name</label>
+				<label for="recipe-name">Recipe Name:</label>
 				<input  class="form-control" id="recipe-name">
 			</div>
 			<div class="form-group">
-				<label for="recipe-category">Recipe Category</label>
+				<label for="recipe-category">Recipe Category:</label>
 				<input class="form-control" id="recipe-category">
 			</div>
 			<div class="form-group">
-				<label for="recipe-tags">Recipe Tags</label>
+				<label for="recipe-tags">Recipe Tags:</label>
 				<input class="form-control" id="recipe-tags">
 			</div>
 			<div class="form-group">
-				<label for="recipe-category">Recipe Category</label>
+				<label for="recipe-category">Recipe Category:</label>
 				<input class="form-control" id="recipe-category">
 			</div>
-			<div class="form-group">
-				<h4>Recipe Time:</h4>
-				<label for="recipe-prep-time">Recipe Prep Time</label>
-				<input class="form-control" id="recipe-prep-time">
-				<label for="recipe-cook-time">Recipe Cook Time</label>
-				<input class="form-control" id="recipe-cook-time">
-				<label for="recipe-total-time">Recipe Total Time</label>
-				<input class="form-control" id="recipe-total-time">
+			<div class="form-group recipe-time-section">
+				<div class="form-group">
+					<label for="recipe-prep-time">Recipe Prep Time:</label>
+					<input class="form-control" id="recipe-prep-time">
+				</div>
+				<div class="form-group">
+					<label for="recipe-cook-time">Recipe Cook Time:</label>
+					<input class="form-control" id="recipe-cook-time">
+				</div>
+				<div class="form-group">
+					<label for="recipe-total-time">Recipe Total Time:</label>
+					<input class="form-control" id="recipe-total-time">
+				</div>
 			</div>
 			<div class="form-group">
-				<label for="recipe-ingredients">Recipe Ingredients</label>
+				<label for="recipe-ingredients">Recipe Ingredients:</label>
 				<input class="form-control" id="recipe-ingredients">
 			</div>
 			<div class="form-group">
-				<label for="recipe-directions">Recipe Directions</label>
+				<label for="recipe-directions">Recipe Directions:</label>
 				<textarea class="form-control" id="recipe-directions"></textarea>
 			</div>
 			<div class="form-group">
-				<label for="recipe-thumbnail">Recipe Thumbnail</label>
+				<label for="recipe-thumbnail">Recipe Thumbnail:</label>
 				<input type="file" id="recipe-thumbnail">
 				<p class="help-block">Thumbnail image needs to be sized at 200px by 200px.  This field is optional and a default "Picture Coming Soon" placeholder image will be used if no thumbnail is uploaded.</p>
 			</div>
