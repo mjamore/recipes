@@ -3,7 +3,7 @@ recipesApp.service('recipesService', function() {
 		return [
 			{
 				"name": "Aunt Rosalie's Bread Pudding",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Desserts",
 				"tags": ["favorites","Easy"],
 				"time": {
@@ -72,7 +72,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Cheesy Corn on the Cob",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Side Dishes",
 				"tags": ["Easy"],
 				"time": {
@@ -117,7 +117,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bacon Cheese Spread",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -174,7 +174,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bacon Crisps",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -207,7 +207,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bacon Swirls",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -258,7 +258,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Brown Sugar Brie with Pecans",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -321,7 +321,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bruschetta with Gorgonzola Cheese and Honey",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -372,7 +372,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bruschetta with Tomatoes and Basil",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -429,7 +429,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Cheesy Baked Spinach and Artichoke Dip",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -492,7 +492,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Artichoke Balls",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -555,7 +555,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Cheesy Chicken Empanadas",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -630,7 +630,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Corn Dip",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -693,7 +693,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Crab Cakes",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -780,7 +780,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Guacamole",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -843,7 +843,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Chicken With Spring Macaroni",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Entrees",
 				"tags": ["favorites","Easy"],
 				"time": {
@@ -894,7 +894,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "4 Cheese Stuffed Shells",
-				"author": "Brenda Vickery",
+				"author": "Brenda Amore Vickery",
 				"category": "Entrees",
 				"tags": ["italian","cheese!"],
 				"time": {
@@ -1087,6 +1087,15 @@ recipesApp.service('recipesService', function() {
 			"Tomatoes crushed",
 			"Vanilla (bean)",
 			"Vanilla (extract)"
+		]
+	}
+
+	this.getAuthorizedUsers = function() {
+		return [
+			'Michael Amore',
+			'Brenda Amore Vickery',
+			'Paul Amore',
+			'Nancy Lascala Milford'
 		]
 	}
 });

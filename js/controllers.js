@@ -11,25 +11,12 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 	
 	$scope.animationsEnabled = true;
 	$scope.isModalOpened = false;
-
-	$scope.getFacebookLoginStatus = function() {
-		Facebook.getLoginStatus(function(response) {
-			if(response.status === "connected") {
-				$scope.isUserIsLoggedIn = true;
-				var promise = $scope.getLoggedInUser();
-				promise.then(function(response) {
-					$scope.loggedInFacebookUser = response.name;
-				}, function(reason) {
-					console.log(reason);
-				});
-			}
-			else {
-				$scope.isUserIsLoggedIn = false;
-			}
-		});
-	}
-	// Run this function on page load
-	$scope.getFacebookLoginStatus();
+	$scope.authorizedUsers = [
+		'Michael Amore',
+		'Brenda Amore Vickery',
+		'Paul Amore',
+		'Nancy Lascala Milford'
+	];
 
 	$scope.openRecipeModal = function (recipe) {
 		// prevent conflict with openRecipeModal - http://stackoverflow.com/questions/19706187/angular-ui-bootstrap-modal-how-to-prevent-multiple-modals-opening
@@ -61,14 +48,35 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 	};
 
 	// Facebook functions
+		$scope.getFacebookLoginStatus = function() {
+			Facebook.getLoginStatus(function(response) {
+				if(response.status === "connected") {
+					$scope.userIsLoggedIn = true;
+					var promise = $scope.getLoggedInUser();
+					promise.then(function(response) {
+						$scope.loggedInFacebookUser = response.name;
+						$scope.userIsAuthorized = $scope.checkIfUserIsAuthorized($scope.loggedInFacebookUser);
+					}, function(reason) {
+						console.log(reason);
+					});
+				}
+				else {
+					$scope.userIsLoggedIn = false;
+				}
+			});
+		}
+		// Run this function on page load
+		$scope.getFacebookLoginStatus();
+
 		$scope.loginToFacebook = function() {
 			Facebook.login(function(response) {
 				if(response.status === "connected") {
-					$scope.isUserIsLoggedIn = true;
+					$scope.userIsLoggedIn = true;
 					$scope.getLoggedInUser();
 					var promise = $scope.getLoggedInUser();
 					promise.then(function(response) {
 						$scope.loggedInFacebookUser = response.name;
+						$scope.userIsAuthorized = $scope.checkIfUserIsAuthorized($scope.loggedInFacebookUser);
 					}, function(reason) {
 						console.log(reason);
 					});
@@ -79,7 +87,8 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 		$scope.logoutOfFacebook = function() {
 			Facebook.logout(function(response) {
 				if(response.status === "unknown") {
-					$scope.isUserIsLoggedIn = false;
+					$scope.userIsLoggedIn = false;
+					$scope.userIsAuthorized = false;
 				}
 			});
 		}
@@ -96,6 +105,11 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 				});
 			});
 		}
+
+	// This function will take the logged in user name and verify if it is one of our application's authorized users
+	$scope.checkIfUserIsAuthorized = function(name) {
+		return $.inArray(name, $scope.authorizedUsers) > -1 ? true : false;
+	}
 
 	$scope.addNewRecipe = function() {
 		var modalInstance = $uibModal.open({
