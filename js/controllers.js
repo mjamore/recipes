@@ -59,3 +59,8 @@ recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', '
 recipesApp.controller('loginController', ['$scope', function($scope) {
 	$scope.something = 'something';
 }]);
+
+
+recipesApp.controller('editRecipesController', ['$scope', function($scope) {
+	$scope.test = 'editRecipesController';
+}]);

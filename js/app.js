@@ -10,6 +10,10 @@ recipesApp.config(['$routeProvider', '$locationProvider', function($routeProvide
 		templateUrl: 'views/login.html',
 		controller: 'loginController'
 	})
+	.when('/edit-recipes', {
+		templateUrl: 'views/editRecipes.html',
+		controller: 'editRecipesController'
+	})
 	.otherwise({
 		redirectTo: '/login'
 	});
