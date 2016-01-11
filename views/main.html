@@ -10,7 +10,7 @@
 			<button type="button" class="btn btn-primary" ng-show="!isUserIsLoggedIn" ng-click="loginToFacebook()">Login</button>
 		</div>
 
-		<a href="/#/edit-recipes">Edit Recipes</a>
+		<button type="button" class="btn btn-primary new-recipe-btn" ng-show="isUserIsLoggedIn" ng-click="addNewRecipe()">Add New Recipe</button>
 
 		<form class="form-inline">
 			<div class="form-group">

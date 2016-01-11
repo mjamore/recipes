@@ -89,6 +89,20 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 			});
 		}
 
+	$scope.addNewRecipe = function() {
+		var modalInstance = $uibModal.open({
+			animation: $scope.animationsEnabled,
+			templateUrl: 'directives/addNewRecipeModal.html',
+			controller: 'addNewRecipeModalController'
+		});
+
+		modalInstance.result.then(function (selectedItem) {
+			$scope.selected = selectedItem;
+		}, function () {
+			console.log('Add new recipe modal dismissed at: ' + new Date());
+		});
+	}
+
 	$scope.filterRecipes = function($event) {
 		$userSearch.val($event.target.text).trigger('change');
 	}
@@ -107,6 +121,13 @@ recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', '
 		item: $scope.recipes[$scope.selectedIndex]
 	};
 
+	$scope.cancel = function () {
+		$uibModalInstance.dismiss('cancel');
+	};
+}]);
+
+
+recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
 	$scope.cancel = function () {
 		$uibModalInstance.dismiss('cancel');
 	};
