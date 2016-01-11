@@ -5,7 +5,7 @@
 		<div class="login-section">
 			<div ng-show="isUserIsLoggedIn">
 				<button type="button" class="btn btn-primary" ng-click="logoutOfFacebook()">Logout</button>
-				<p>Logged in as {{loggedInFacebookUser}}</p>
+				<p>Logged in as <span class="username">{{loggedInFacebookUser}}</span></p>
 			</div>
 			<button type="button" class="btn btn-primary" ng-show="!isUserIsLoggedIn" ng-click="loginToFacebook()">Login</button>
 		</div>

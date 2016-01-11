@@ -10,6 +10,7 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 	$scope.tags = recipesService.getTags();
 	
 	$scope.animationsEnabled = true;
+	$scope.isModalOpened = false;
 
 	$scope.getFacebookLoginStatus = function() {
 		Facebook.getLoginStatus(function(response) {
@@ -31,6 +32,9 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 	$scope.getFacebookLoginStatus();
 
 	$scope.openRecipeModal = function (recipe) {
+		// prevent conflict with openRecipeModal - http://stackoverflow.com/questions/19706187/angular-ui-bootstrap-modal-how-to-prevent-multiple-modals-opening
+		if($scope.isModalOpened) return;
+
 		var idx = $scope.recipes.indexOf(recipe);
 			returnArray = [$scope.recipes, idx];
 
@@ -45,10 +49,14 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 			}
 		});
 
+		$scope.isModalOpened = true;
+
 		modalInstance.result.then(function (selectedItem) {
 			$scope.selected = selectedItem;
+			$scope.isModalOpened = false;
 		}, function () {
 			console.log('View recipe modal dismissed at: ' + new Date());
+			$scope.isModalOpened = false;
 		});
 	};
 
@@ -102,6 +110,35 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 			console.log('Add new recipe modal dismissed at: ' + new Date());
 		});
 	}
+
+	$scope.openEditRecipeModal = function (recipe) {
+		// prevent conflict with openRecipeModal - http://stackoverflow.com/questions/19706187/angular-ui-bootstrap-modal-how-to-prevent-multiple-modals-opening
+		if($scope.isModalOpened) return;
+
+		var idx = $scope.recipes.indexOf(recipe);
+			returnArray = [$scope.recipes, idx];
+
+		var modalInstance = $uibModal.open({
+			animation: $scope.animationsEnabled,
+			templateUrl: 'directives/editRecipeModal.html',
+			controller: 'recipeModalController',
+			resolve: {
+				recipes: function () {
+					return returnArray;
+				}
+			}
+		});
+
+		$scope.isModalOpened = true;
+
+		modalInstance.result.then(function (selectedItem) {
+			$scope.selected = selectedItem;
+			$scope.isModalOpened = false;
+		}, function () {
+			console.log('Edit recipe modal dismissed at: ' + new Date());
+			$scope.isModalOpened = false;
+		});
+	};
 
 	$scope.filterRecipes = function($event) {
 		$userSearch.val($event.target.text).trigger('change');

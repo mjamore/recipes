@@ -4,8 +4,8 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Aunt Rosalie's Bread Pudding",
 				"author": "Brenda Vickery",
-				"category": "desserts",
-				"tags": ["favorites","easy"],
+				"category": "Desserts",
+				"tags": ["favorites","Easy"],
 				"time": {
 					"prep_time": "10 minutes",
 					"cook_time": "35 minutes",
@@ -73,8 +73,8 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Cheesy Corn on the Cob",
 				"author": "Brenda Vickery",
-				"category": "side dishes",
-				"tags": ["easy"],
+				"category": "Side Dishes",
+				"tags": ["Easy"],
 				"time": {
 					"prep_time": "10 minutes",
 					"cook_time": "20 minutes",
@@ -118,7 +118,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Bacon Cheese Spread",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -175,7 +175,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Bacon Crisps",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -208,7 +208,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Bacon Swirls",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -259,7 +259,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Brown Sugar Brie with Pecans",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -322,7 +322,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Bruschetta with Gorgonzola Cheese and Honey",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -373,7 +373,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Bruschetta with Tomatoes and Basil",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -430,7 +430,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Cheesy Baked Spinach and Artichoke Dip",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -493,7 +493,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Artichoke Balls",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -556,7 +556,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Cheesy Chicken Empanadas",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -631,7 +631,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Corn Dip",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -694,7 +694,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Crab Cakes",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -781,7 +781,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Guacamole",
 				"author": "Brenda Vickery",
-				"category": "appetizers",
+				"category": "Appetizers",
 				"tags": [],
 				"time": {
 					"prep_time": "10 minutes",
@@ -844,8 +844,8 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "Chicken With Spring Macaroni",
 				"author": "Brenda Vickery",
-				"category": "entrees",
-				"tags": ["favorites","easy"],
+				"category": "Entrees",
+				"tags": ["favorites","Easy"],
 				"time": {
 					"prep_time": "5 minutes",
 					"cook_time": "40 minutes",
@@ -895,7 +895,7 @@ recipesApp.service('recipesService', function() {
 			{
 				"name": "4 Cheese Stuffed Shells",
 				"author": "Brenda Vickery",
-				"category": "entrees",
+				"category": "Entrees",
 				"tags": ["italian","cheese!"],
 				"time": {
 					"prep_time": "20 minutes",
@@ -992,58 +992,58 @@ recipesApp.service('recipesService', function() {
 	this.getRecipesMetaData = function() {
 		return {
 			"categories": [
-				"appetizers",
-				"breads",
-				"breakfast",
-				"dessert",
-				"entrees",
-				"side dishes"
+				"Appetizers",
+				"Breads",
+				"Breakfast",
+				"Desserts",
+				"Entrees",
+				"Side Dishes"
 			],
 			"ingredients": [
-				"asiago cheese",
-				"baking powder",
-				"basil (fresh)",
-				"bread",
-				"chicken",
-				"chicken bouillion cubes",
-				"cinnamon",
-				"corn",
-				"eggs",
-				"flour (cake)",
-				"garlic",
-				"garlic salt",
-				"ground beef",
-				"mayonnaise",
-				"milk",
-				"mozzarella",
-				"olive oil",
-				"parmesan cheese",
-				"parsley (fresh)",
-				"pasta (jumbo shells)",
-				"pasta (rotini)",
-				"pepper",
-				"raisins",
-				"ricotta cheese",
-				"salt",
-				"sugar (brown)",
-				"sugar (white)",
-				"tomatoes crushed",
-				"vanilla (bean)",
-				"vanilla (extract)"
+				"Asiago Cheese",
+				"Baking Powder",
+				"Basil (fresh)",
+				"Bread",
+				"Chicken",
+				"Chicken Bouillion Cubes",
+				"Cinnamon",
+				"Corn",
+				"Eggs",
+				"Flour (cake)",
+				"Garlic",
+				"Garlic Salt",
+				"Ground Beef",
+				"Mayonnaise",
+				"Milk",
+				"Mozzarella",
+				"Olive Oil",
+				"Parmesan Cheese",
+				"Parsley (fresh)",
+				"Pasta (jumbo shells)",
+				"Pasta (rotini)",
+				"Pepper",
+				"Raisins",
+				"Ricotta Cheese",
+				"Salt",
+				"Sugar (brown)",
+				"Sugar (white)",
+				"Tomatoes crushed",
+				"Vanilla (bean)",
+				"Vanilla (extract)"
 			]
 		}
 	}
 
 	this.getCategories = function() {
 		return [
-			"appetizers",
-			"breads",
-			"breakfast",
-			"desserts",
-			"entrees",
-			"miscellaneous",
-			"salads and dressings",
-			"side dishes"
+			"Appetizers",
+			"Breads",
+			"Breakfast",
+			"Desserts",
+			"Entrees",
+			"Miscellaneous",
+			"Salads and Dressings",
+			"Side Dishes"
 		]
 	}
 
@@ -1051,42 +1051,42 @@ recipesApp.service('recipesService', function() {
 		return [
 			"favorites",
 			"Italian",
-			"easy"
+			"Easy"
 		]
 	}
 
 	this.getIngredients = function() {
 		return [
-			"asiago cheese",
-			"baking powder",
-			"basil (fresh)",
-			"bread",
-			"chicken",
-			"chicken bouillion cubes",
-			"cinnamon",
-			"corn",
-			"eggs",
-			"flour (cake)",
-			"garlic",
-			"garlic salt",
-			"ground beef",
-			"mayonnaise",
-			"milk",
-			"mozzarella",
-			"olive oil",
-			"parmesan cheese",
-			"parsley (fresh)",
-			"pasta (jumbo shells)",
-			"pasta (rotini)",
-			"pepper",
-			"raisins",
-			"ricotta cheese",
-			"salt",
-			"sugar (brown)",
-			"sugar (white)",
-			"tomatoes crushed",
-			"vanilla (bean)",
-			"vanilla (extract)"
+			"Asiago Cheese",
+			"Baking Powder",
+			"Basil (fresh)",
+			"Bread",
+			"Chicken",
+			"Chicken Bouillion Cubes",
+			"Cinnamon",
+			"Corn",
+			"Eggs",
+			"Flour (cake)",
+			"Garlic",
+			"Garlic Salt",
+			"Ground Beef",
+			"Mayonnaise",
+			"Milk",
+			"Mozzarella",
+			"Olive Oil",
+			"Parmesan Cheese",
+			"Parsley (fresh)",
+			"Pasta (jumbo shells)",
+			"Pasta (rotini)",
+			"Pepper",
+			"Raisins",
+			"Ricotta Cheese",
+			"Salt",
+			"Sugar (brown)",
+			"Sugar (white)",
+			"Tomatoes crushed",
+			"Vanilla (bean)",
+			"Vanilla (extract)"
 		]
 	}
 });

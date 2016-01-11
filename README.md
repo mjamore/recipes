@@ -25,6 +25,7 @@ This is a web application that will have all of our family recipes listed with p
 	- Start serving the index.html from the dist directory.  Will need to have access to the views directory.
 	- Allow HTML inside of recipes (i.e. inside of recipe directions)
 	- Update view to center title/image when less than 768px
+	- Add login check so only authorized users (me, mom, Paul, Nancy) can perform CRUD operations
 
 
 ### Completed:

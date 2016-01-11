@@ -1,34 +1,34 @@
-<div class="add-new-recipe-modal" modal="showModal" close="cancel()">
+<div class="edit-recipe-modal" modal="showModal" close="cancel()">
 	<form>
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
-			<h3 class="modal-title capitalize">Add New Recipe</h3>
+			<h3 class="modal-title capitalize">Edit Recipe - {{recipes[selectedIndex].name}}</h3>
 		</div>
 		<div class="modal-body">
 			<div class="form-group">
 				<label for="recipe-name">Recipe Name:</label>
-				<input  class="form-control" id="recipe-name">
+				<input  class="form-control" id="recipe-name" value="{{recipes[selectedIndex].name}}">
 			</div>
 			<div class="form-group">
 				<label for="recipe-category">Recipe Category:</label>
-				<input class="form-control" id="recipe-category">
+				<input class="form-control" id="recipe-category" value="{{recipes[selectedIndex].category}}">
 			</div>
 			<div class="form-group">
 				<label for="recipe-tags">Recipe Tags:</label>
-				<input class="form-control" id="recipe-tags">
+				<input class="form-control" id="recipe-tags" value="">
 			</div>
 			<div class="form-group recipe-time-section">
 				<div class="form-group">
 					<label for="recipe-prep-time">Recipe Prep Time:</label>
-					<input class="form-control" id="recipe-prep-time">
+					<input class="form-control" id="recipe-prep-time" value="{{recipes[selectedIndex].time.prep_time}}">
 				</div>
 				<div class="form-group">
 					<label for="recipe-cook-time">Recipe Cook Time:</label>
-					<input class="form-control" id="recipe-cook-time">
+					<input class="form-control" id="recipe-cook-time" value="{{recipes[selectedIndex].time.cook_time}}">
 				</div>
 				<div class="form-group">
 					<label for="recipe-total-time">Recipe Total Time:</label>
-					<input class="form-control" id="recipe-total-time">
+					<input class="form-control" id="recipe-total-time" value="{{recipes[selectedIndex].time.total_time}}">
 				</div>
 			</div>
 			<div class="form-group">
@@ -37,7 +37,7 @@
 			</div>
 			<div class="form-group">
 				<label for="recipe-directions">Recipe Directions:</label>
-				<textarea class="form-control" id="recipe-directions"></textarea>
+				<textarea class="form-control" id="recipe-directions">{{recipes[selectedIndex].directions}}</textarea>
 			</div>
 			<div class="form-group">
 				<label for="recipe-thumbnail">Recipe Thumbnail:</label>
