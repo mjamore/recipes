@@ -10,3 +10,37 @@ li {
 li.no-bullet {
 	list-style-type: none
 }
+
+
+
+// Bootstrap overrides
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+.btn-link:hover {
+	text-decoration: underline;
+}
+
+
+
+// Generic modal styling
+.modal-header {
+	.modal-title {
+		text-align: center;
+	}
+	.close {
+		float: none;
+		position: absolute;
+		right: 20px;
+		span {
+			font-size: 30px;
+		}
+	}
+}

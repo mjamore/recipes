@@ -1,0 +1,28 @@
+<div class="login-modal" modal="showModal" close="cancel()">
+	<form>
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
+			<h3 class="modal-title capitalize">Login With Facebook</h3>
+		</div>
+		<div class="modal-body">
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon">
+						<span class="glyphicon glyphicon-user"></span>
+					</div>
+					<input class="form-control" name="username" id="username" placeholder="Username" autofocus>
+				</div>
+				<div class="input-group">
+					<div class="input-group-addon">
+						<span class="glyphicon glyphicon-lock"></span>
+					</div>
+					<input type="password" class="form-control" name="password" id="password" placeholder="Username">
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<!-- <button class="btn btn-primary" ng-click="cancel()">Cancel</button> -->
+			<input type="submit" class="btn btn-primary" ng-click="loginToFacebook()" value="Login">
+		</div>
+	</form>
+</div>

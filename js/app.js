@@ -1,24 +1,17 @@
-var recipesApp = angular.module('recipesApp', ['ngRoute', 'ui.bootstrap']);
+var recipesApp = angular.module('recipesApp', ['ngRoute', 'ui.bootstrap', 'facebook']);
 
-recipesApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+recipesApp.config(['$routeProvider', '$locationProvider', 'FacebookProvider', function($routeProvider, $locationProvider, FacebookProvider) {
 	$routeProvider
 	.when('/', {
 		templateUrl: 'views/main.html',
 		controller: 'mainController'
 	})
-	.when('/login', {
-		templateUrl: 'views/login.html',
-		controller: 'loginController'
-	})
-	.when('/edit-recipes', {
-		templateUrl: 'views/editRecipes.html',
-		controller: 'editRecipesController'
-	})
 	.otherwise({
-		redirectTo: '/login'
+		redirectTo: '/'
 	});
 
 	$locationProvider.html5Mode(true);
+	FacebookProvider.init('211930432483084');
 }]);
 
 recipesApp.directive('recipe', function() {

@@ -1,5 +1,5 @@
 // CONTROLLERS
-recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService', function($scope, $uibModal, recipesService) {
+recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService', 'Facebook', '$q', function($scope, $uibModal, recipesService, Facebook, $q) {
 
 	// Cache selectors
 	var $userSearch = angular.element('#user-search');
@@ -8,8 +8,27 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 	$scope.recipes = recipesService.getRecipes();
 	$scope.categories = recipesService.getCategories();
 	$scope.tags = recipesService.getTags();
-
+	
 	$scope.animationsEnabled = true;
+
+	$scope.getFacebookLoginStatus = function() {
+		Facebook.getLoginStatus(function(response) {
+			if(response.status === "connected") {
+				$scope.isUserIsLoggedIn = true;
+				var promise = $scope.getLoggedInUser();
+				promise.then(function(response) {
+					$scope.loggedInFacebookUser = response.name;
+				}, function(reason) {
+					console.log(reason);
+				});
+			}
+			else {
+				$scope.isUserIsLoggedIn = false;
+			}
+		});
+	}
+	// Run this function on page load
+	$scope.getFacebookLoginStatus();
 
 	$scope.openRecipeModal = function (recipe) {
 		var idx = $scope.recipes.indexOf(recipe);
@@ -29,9 +48,46 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 		modalInstance.result.then(function (selectedItem) {
 			$scope.selected = selectedItem;
 		}, function () {
-			console.log('Modal dismissed at: ' + new Date());
+			console.log('View recipe modal dismissed at: ' + new Date());
 		});
 	};
+
+	// Facebook functions
+		$scope.loginToFacebook = function() {
+			Facebook.login(function(response) {
+				if(response.status === "connected") {
+					$scope.isUserIsLoggedIn = true;
+					$scope.getLoggedInUser();
+					var promise = $scope.getLoggedInUser();
+					promise.then(function(response) {
+						$scope.loggedInFacebookUser = response.name;
+					}, function(reason) {
+						console.log(reason);
+					});
+				}
+			});
+		}
+
+		$scope.logoutOfFacebook = function() {
+			Facebook.logout(function(response) {
+				if(response.status === "unknown") {
+					$scope.isUserIsLoggedIn = false;
+				}
+			});
+		}
+
+		$scope.getLoggedInUser = function() {
+			return $q(function(resolve, reject) {
+				Facebook.api('/me', function(response) {
+					if(response.name !== "") {
+						resolve(response);
+					}
+					else {
+						reject('Was not able to retreive the username from Facebook.');
+					}
+				});
+			});
+		}
 
 	$scope.filterRecipes = function($event) {
 		$userSearch.val($event.target.text).trigger('change');
@@ -54,10 +110,6 @@ recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', '
 	$scope.cancel = function () {
 		$uibModalInstance.dismiss('cancel');
 	};
-}]);
-
-recipesApp.controller('loginController', ['$scope', function($scope) {
-	$scope.something = 'something';
 }]);
 
 
