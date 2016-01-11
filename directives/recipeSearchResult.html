@@ -5,7 +5,7 @@
 	</div>
 	<div class="recipe-body capitalize">
 		<h3 class="list-group-item-heading">{{recipe.name}}</h3>
-		<p class="list-group-item-text"><span class="heading">Author:</span> {{recipe.author}}<span ng-show="userIsAuthorized"> - <button type="button" class="btn btn-link edit-recipe-btn" ng-click="openEditRecipeModal(recipe)">Edit</button></span></p>
+		<p class="list-group-item-text"><span class="heading">Author:</span> {{recipe.author}}<span ng-show="userIsAuthorized && loggedInFacebookUser === recipe.author"> - <button type="button" class="btn btn-link edit-recipe-btn" ng-click="openEditRecipeModal(recipe)">Edit</button></span></p>
 		<p class="list-group-item-text"><span class="heading">Category:</span> {{recipe.category}}</p>
 		<p class="list-group-item-text"><span class="heading">Total Time:</span> {{recipe.time.total_time}}</p>
 		<p class="list-group-item-text"><span class="heading">Ingredients:</span>

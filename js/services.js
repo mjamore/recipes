@@ -72,7 +72,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Cheesy Corn on the Cob",
-				"author": "Brenda Amore Vickery",
+				"author": "Michael Amore",
 				"category": "Side Dishes",
 				"tags": ["Easy"],
 				"time": {
@@ -117,7 +117,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bacon Cheese Spread",
-				"author": "Brenda Amore Vickery",
+				"author": "Paul Amore",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
@@ -174,7 +174,7 @@ recipesApp.service('recipesService', function() {
 			},
 			{
 				"name": "Bacon Crisps",
-				"author": "Brenda Amore Vickery",
+				"author": "Nancy Lascala Milford",
 				"category": "Appetizers",
 				"tags": [],
 				"time": {
