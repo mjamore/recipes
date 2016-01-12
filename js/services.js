@@ -13,61 +13,61 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "bread",
+						"ingredient": "Bread",
 						"quantity": "4",
 						"measure": "cups",
 						"preparation": "cubed"
 					},
 					{
-						"ingredient": "raisins",
+						"ingredient": "Raisins",
 						"quantity": "0.5",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "cinnamon",
+						"ingredient": "Cinnamon",
 						"quantity": "1",
 						"measure": "teaspoon",
 						"preparation": ""
 					},
 					{
-						"ingredient": "salt",
+						"ingredient": "Salt",
 						"quantity": "0.25",
 						"measure": "teaspoon",
 						"preparation": ""
 					},
 					{
-						"ingredient": "vanilla (extract)",
+						"ingredient": "Vanilla (extract)",
 						"quantity": "1",
 						"measure": "teaspoon",
 						"preparation": ""
 					},
 					{
-						"ingredient": "eggs",
+						"ingredient": "Eggs",
 						"quantity": "2",
 						"measure": "large",
 						"preparation": "beaten"
 					},
 					{
-						"ingredient": "milk",
+						"ingredient": "Milk",
 						"quantity": "2",
 						"measure": "cups",
 						"preparation": "scalded"
 					},
 					{
-						"ingredient": "butter",
+						"ingredient": "Butter",
 						"quantity": "0.25",
 						"measure": "cup",
 						"preparation": "melted"
 					},
 					{
-						"ingredient": "sugar (white)",
+						"ingredient": "Sugar (white)",
 						"quantity": "0.5",
 						"measure": "cup",
 						"preparation": ""
 					}
 				],
-				"directions": 'Set oven to 350 degrees. Combine all ingredients. Place into buttered pan and bake for 35 minutes. <a href="http://www.youtube.com">YouTube</a>',
+				"directions": "Set oven to 350 degrees. Combine all ingredients. Place into buttered pan and bake for 35 minutes. <a href=\"http://www.youtube.com\">YouTube</a>",
 				"images": ["http://www.gannett-cdn.com/-mm-/b075220f3ec7b17175d5f1983afa7784cfb8c8c2/c=137-0-685-548&r=x203&c=200x200/local/-/media/StCloud/2015/02/24/B9316321475Z.1_20150224131207_000_G27A0OCTJ.1-0.jpg"]
 			},
 			{
@@ -82,31 +82,31 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "mayonnaise",
+						"ingredient": "Mayonnaise",
 						"quantity": "0.5",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "corn",
+						"ingredient": "Corn",
 						"quantity": "5",
 						"measure": "ears",
 						"preparation": "cleaned, shucked"
 					},
 					{
-						"ingredient": "parmesan cheese",
+						"ingredient": "Parmesan Cheese",
 						"quantity": "1",
 						"measure": "cup",
 						"preparation": "grated"
 					},
 					{
-						"ingredient": "salt",
+						"ingredient": "Salt",
 						"quantity": "1",
 						"measure": "teaspoon",
 						"preparation": "course"
 					},
 					{
-						"ingredient": "pepper",
+						"ingredient": "Pepper",
 						"quantity": "1",
 						"measure": "teaspoon",
 						"preparation": "course"
@@ -127,43 +127,43 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "loaf of round bread",
+						"ingredient": "Loaf of Round Bread",
 						"quantity": "16",
 						"measure": "ounces",
 						"preparation": ""
 					},
 					{
-						"ingredient": "colby cheese",
+						"ingredient": "Colby Cheese",
 						"quantity": "8",
 						"measure": "ounces",
 						"preparation": "shredded"
 					},
 					{
-						"ingredient": "bacon",
+						"ingredient": "Bacon",
 						"quantity": "12",
 						"measure": "slices",
 						"preparation": "cooked crisp and crumbled"
 					},
 					{
-						"ingredient": "parmesan cheese",
+						"ingredient": "Parmesan Cheese",
 						"quantity": "1",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "mayonnaise",
+						"ingredient": "Mayonnaise",
 						"quantity": "1",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "onion",
+						"ingredient": "Onion",
 						"quantity": "1",
 						"measure": "small",
 						"preparation": "chopped fine"
 					},
 					{
-						"ingredient": "garlic",
+						"ingredient": "Garlic",
 						"quantity": "1",
 						"measure": "clove",
 						"preparation": "minced"
@@ -184,7 +184,7 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "parmesan cheese",
+						"ingredient": "Parmesan Cheese",
 						"quantity": "0.5",
 						"measure": "cups",
 						"preparation": "grated"
@@ -196,7 +196,7 @@ recipesApp.service('recipesService', function() {
 						"preparation": ""
 					},
 					{
-						"ingredient": "bacon",
+						"ingredient": "Bacon",
 						"quantity": "1",
 						"measure": "pound",
 						"preparation": "sliced, cut in half"
@@ -217,37 +217,37 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "crescent rolls",
+						"ingredient": "Crescent Rolls",
 						"quantity": "8",
 						"measure": "ounces",
 						"preparation": ""
 					},
 					{
-						"ingredient": "onion",
+						"ingredient": "Onion",
 						"quantity": "2",
 						"measure": "tablespoons",
 						"preparation": "minced"
 					},
 					{
-						"ingredient": "cream cheese",
+						"ingredient": "Cream Cheese",
 						"quantity": "3",
 						"measure": "ounces",
 						"preparation": "softened"
 					},
 					{
-						"ingredient": "milk",
+						"ingredient": "Milk",
 						"quantity": "1",
 						"measure": "teaspoon",
 						"preparation": ""
 					},
 					{
-						"ingredient": "bacon",
+						"ingredient": "Bacon",
 						"quantity": "5",
 						"measure": "slices",
 						"preparation": "cooked and crumbled"
 					},
 					{
-						"ingredient": "parmesan cheese",
+						"ingredient": "Parmesan Cheese",
 						"quantity": "",
 						"measure": "",
 						"preparation": "grated"
@@ -268,49 +268,49 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "cream",
+						"ingredient": "Cream",
 						"quantity": "0.5",
 						"measure": "cups",
 						"preparation": ""
 					},
 					{
-						"ingredient": "light brown sugar",
+						"ingredient": "Light Brown Sugar",
 						"quantity": "1.25",
 						"measure": "cups",
 						"preparation": ""
 					},
 					{
-						"ingredient": "pecans",
+						"ingredient": "Pecans",
 						"quantity": "1.25",
 						"measure": "cups",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "puff pastry",
+						"ingredient": "Puff Pastry",
 						"quantity": "1",
 						"measure": "sheet",
 						"preparation": ""
 					},
 					{
-						"ingredient": "butter",
+						"ingredient": "Butter",
 						"quantity": "0.5",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "light corn syrup",
+						"ingredient": "Light Corn Syrup",
 						"quantity": "2",
 						"measure": "tablespoons",
 						"preparation": ""
 					},
 					{
-						"ingredient": "bourbon",
+						"ingredient": "Bourbon",
 						"quantity": "1",
 						"measure": "tablespoon",
 						"preparation": ""
 					},
 					{
-						"ingredient": "brie cheese",
+						"ingredient": "Brie Cheese",
 						"quantity": "10 - 14",
 						"measure": "ounces",
 						"preparation": ""
@@ -331,37 +331,37 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "baguette bread",
+						"ingredient": "Baguette Bread",
 						"quantity": "36",
 						"measure": "slices",
 						"preparation": "sliced 1/4 inch thick"
 					},
 					{
-						"ingredient": "olive oil",
+						"ingredient": "Olive Oil",
 						"quantity": "0.25",
 						"measure": "cups",
 						"preparation": ""
 					},
 					{
-						"ingredient": "gorgonzola cheese",
+						"ingredient": "Gorgonzola Cheese",
 						"quantity": "8",
 						"measure": "ounces",
 						"preparation": "sliced"
 					},
 					{
-						"ingredient": "pecan halves",
+						"ingredient": "Pecan Halves",
 						"quantity": "36",
 						"measure": "",
 						"preparation": ""
 					},
 					{
-						"ingredient": "sugar (white)",
+						"ingredient": "Sugar (white)",
 						"quantity": "0.25",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "honey",
+						"ingredient": "Honey",
 						"quantity": "6",
 						"measure": "tablespoons",
 						"preparation": ""
@@ -382,43 +382,43 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "ripe tomatoes",
+						"ingredient": "Ripe Tomatoes",
 						"quantity": "1",
 						"measure": "cup",
 						"preparation": "diced"
 					},
 					{
-						"ingredient": "olive oil",
+						"ingredient": "Olive Oil",
 						"quantity": "2",
 						"measure": "teaspoons",
 						"preparation": ""
 					},
 					{
-						"ingredient": "basil leaves",
+						"ingredient": "Basil Leaves",
 						"quantity": "2",
 						"measure": "tablespoons",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "baguette bread",
+						"ingredient": "Baguette Bread",
 						"quantity": "1",
 						"measure": "",
 						"preparation": "sliced and toasted"
 					},
 					{
-						"ingredient": "salt",
+						"ingredient": "Salt",
 						"quantity": "",
 						"measure": "",
 						"preparation": ""
 					},
 					{
-						"ingredient": "pepper",
+						"ingredient": "Pepper",
 						"quantity": "",
 						"measure": "",
 						"preparation": ""
 					},
 					{
-						"ingredient": "garlic powder",
+						"ingredient": "Garlic Powder",
 						"quantity": "0.5",
 						"measure": "teaspoon",
 						"preparation": ""
@@ -439,49 +439,49 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "frozen spinach",
+						"ingredient": "Frozen Spinach",
 						"quantity": "10",
 						"measure": "ounces",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "Knorr vegetable soup mix",
+						"ingredient": "Knorr Vegetable Soup Mix",
 						"quantity": "1",
 						"measure": "envelope",
 						"preparation": ""
 					},
 					{
-						"ingredient": "sour cream",
+						"ingredient": "Sour Cream",
 						"quantity": "1",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "mayonnaise",
+						"ingredient": "Mayonnaise",
 						"quantity": "1",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "parmesan cheese",
+						"ingredient": "Parmesan Cheese",
 						"quantity": "0.25",
 						"measure": "cup",
 						"preparation": "grated"
 					},
 					{
-						"ingredient": "monterrey jack cheese",
+						"ingredient": "Monterrey Jack Cheese",
 						"quantity": "0.25",
 						"measure": "cups",
 						"preparation": "shredded"
 					},
 					{
-						"ingredient": "artichoke hearts",
+						"ingredient": "Artichoke Hearts",
 						"quantity": "14",
 						"measure": "ounces",
 						"preparation": "drained and chopped"
 					},
 					{
-						"ingredient": "cayenne pepper",
+						"ingredient": "Cayenne Pepper",
 						"quantity": "0.25",
 						"measure": "teaspoons",
 						"preparation": ""
@@ -502,49 +502,49 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "olive oil",
+						"ingredient": "Olive Oil",
 						"quantity": "0.75",
 						"measure": "cups",
 						"preparation": ""
 					},
 					{
-						"ingredient": "eggs",
+						"ingredient": "Eggs",
 						"quantity": "2",
 						"measure": "large",
 						"preparation": "well beaten"
 					},
 					{
-						"ingredient": "garlic",
+						"ingredient": "Garlic",
 						"quantity": "3",
 						"measure": "cloves",
 						"preparation": "minced"
 					},
 					{
-						"ingredient": "seasoned bread crumbs",
+						"ingredient": "Seasoned Bread Crumbs",
 						"quantity": "1",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "artichoke hearts",
+						"ingredient": "Artichoke Hearts",
 						"quantity": "9",
 						"measure": "ounces",
 						"preparation": "drained"
 					},
 					{
-						"ingredient": "parmesan cheese",
+						"ingredient": "Parmesan Cheese",
 						"quantity": "0.75",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "salt",
+						"ingredient": "Salt",
 						"quantity": "",
 						"measure": "",
 						"preparation": ""
 					},
 					{
-						"ingredient": "pepper",
+						"ingredient": "Pepper",
 						"quantity": "",
 						"measure": "",
 						"preparation": ""
@@ -565,61 +565,61 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "chicken",
+						"ingredient": "Chicken",
 						"quantity": "1",
 						"measure": "cup",
 						"preparation": "cooked, chopped"
 					},
 					{
-						"ingredient": "cream cheese",
+						"ingredient": "Cream Cheese",
 						"quantity": "4",
 						"measure": "ounces",
 						"preparation": "softened"
 					},
 					{
-						"ingredient": "colby/jack cheese",
+						"ingredient": "Colby/Jack Cheese",
 						"quantity": "4",
 						"measure": "ounces",
 						"preparation": ""
 					},
 					{
-						"ingredient": "salt",
+						"ingredient": "Salt",
 						"quantity": "0.5",
 						"measure": "teaspoon",
 						"preparation": ""
 					},
 					{
-						"ingredient": "Pillsbury pie crust",
+						"ingredient": "Pillsbury Pie Crust",
 						"quantity": "1",
 						"measure": "box",
 						"preparation": ""
 					},
 					{
-						"ingredient": "red bell pepper",
+						"ingredient": "Red Bell Pepper",
 						"quantity": "1",
 						"measure": "whole",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "jalapeno",
+						"ingredient": "Jalapenos",
 						"quantity": "1",
 						"measure": "whole",
 						"preparation": "seeded and chopped"
 					},
 					{
-						"ingredient": "cumin",
+						"ingredient": "Cumin",
 						"quantity": "1",
 						"measure": "teaspoon",
 						"preparation": ""
 					},
 					{
-						"ingredient": "black pepper",
+						"ingredient": "Pepper",
 						"quantity": "1",
 						"measure": "teaspoon",
 						"preparation": ""
 					},
 					{
-						"ingredient": "water",
+						"ingredient": "Water",
 						"quantity": "",
 						"measure": "",
 						"preparation": ""
@@ -640,49 +640,49 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "Mexican corn",
+						"ingredient": "Mexican Corn",
 						"quantity": "15",
 						"measure": "ounces",
 						"preparation": "drained"
 					},
 					{
-						"ingredient": "green chilies",
+						"ingredient": "Green Chilies",
 						"quantity": "4",
 						"measure": "cans",
 						"preparation": ""
 					},
 					{
-						"ingredient": "green onions",
+						"ingredient": "Green Onions",
 						"quantity": "8",
 						"measure": "whole",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "jalapenos",
+						"ingredient": "Jalapenos",
 						"quantity": "8",
 						"measure": "whole",
 						"preparation": "seeded and chopped"
 					},
 					{
-						"ingredient": "cheddar cheese",
+						"ingredient": "Cheddar Cheese",
 						"quantity": "2",
 						"measure": "cups",
 						"preparation": "shredded"
 					},
 					{
-						"ingredient": "red bell pepper",
+						"ingredient": "Red Bell Pepper",
 						"quantity": "1",
 						"measure": "whole",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "mayonnaise",
+						"ingredient": "Mayonnaise",
 						"quantity": "1",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "sour cream",
+						"ingredient": "Sour Cream",
 						"quantity": "4",
 						"measure": "ounces",
 						"preparation": ""
@@ -703,73 +703,73 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "vegetable oil",
+						"ingredient": "Vegetable Oil",
 						"quantity": "2",
 						"measure": "tablespoons",
 						"preparation": ""
 					},
 					{
-						"ingredient": "garlic",
+						"ingredient": "Garlic",
 						"quantity": "8",
 						"measure": "cloves",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "parsley",
+						"ingredient": "Parsley",
 						"quantity": "4",
 						"measure": "tablespoons",
 						"preparation": ""
 					},
 					{
-						"ingredient": "bread crumbs",
+						"ingredient": "Bread Crumbs",
 						"quantity": "0.5",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "parmesan cheese",
+						"ingredient": "Parmesan Cheese",
 						"quantity": "0.75",
 						"measure": "cup",
 						"preparation": ""
 					},
 					{
-						"ingredient": "flour",
+						"ingredient": "Flour",
 						"quantity": "2",
 						"measure": "cups",
 						"preparation": "seasoned"
 					},
 					{
-						"ingredient": "onion",
+						"ingredient": "Onion",
 						"quantity": "1",
 						"measure": "medium",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "lump crab meat",
+						"ingredient": "Lump Crab Meat",
 						"quantity": "1",
 						"measure": "pound",
 						"preparation": ""
 					},
 					{
-						"ingredient": "green onions",
+						"ingredient": "Green Onions",
 						"quantity": "0.5",
 						"measure": "bunch",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "creole mustard mayonnaise",
+						"ingredient": "Creole Mustard Mayonnaise",
 						"quantity": "2",
 						"measure": "tablespoons",
 						"preparation": ""
 					},
 					{
-						"ingredient": "eggs",
+						"ingredient": "Eggs",
 						"quantity": "3",
 						"measure": "large",
 						"preparation": "slightly beaten"
 					},
 					{
-						"ingredient": "vegetable oil",
+						"ingredient": "Vegetable Oil",
 						"quantity": "",
 						"measure": "",
 						"preparation": "for frying"
@@ -790,49 +790,49 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "avacados",
+						"ingredient": "Avacados",
 						"quantity": "4",
 						"measure": "whole",
 						"preparation": "ripe"
 					},
 					{
-						"ingredient": "limes",
+						"ingredient": "Limes",
 						"quantity": "4",
 						"measure": "whole",
 						"preparation": "juiced"
 					},
 					{
-						"ingredient": "garlic",
+						"ingredient": "Garlic",
 						"quantity": "1",
 						"measure": "clove",
 						"preparation": "minced"
 					},
 					{
-						"ingredient": "jalapeno peppers",
+						"ingredient": "Jalapenos",
 						"quantity": "2",
 						"measure": "whole",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "cilantro",
+						"ingredient": "Cilantro",
 						"quantity": "0.5",
 						"measure": "cup",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "olive oil",
+						"ingredient": "Olive Oil",
 						"quantity": "",
 						"measure": "",
 						"preparation": ""
 					},
 					{
-						"ingredient": "salt",
+						"ingredient": "Salt",
 						"quantity": "",
 						"measure": "",
 						"preparation": ""
 					},
 					{
-						"ingredient": "pepper",
+						"ingredient": "Pepper",
 						"quantity": "",
 						"measure": "",
 						"preparation": ""
@@ -853,37 +853,37 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "chicken",
+						"ingredient": "Chicken",
 						"quantity": "1",
 						"measure": "whole cut up",
 						"preparation": "cleaned"
 					},
 					{
-						"ingredient": "pasta (rotini)",
+						"ingredient": "Pasta (rotini)",
 						"quantity": "16",
 						"measure": "oz.",
 						"preparation": ""
 					},
 					{
-						"ingredient": "chicken bouillion cubes",
+						"ingredient": "Chicken Bouillion Cubes",
 						"quantity": "6",
 						"measure": "cubes",
 						"preparation": ""
 					},
 					{
-						"ingredient": "salt",
+						"ingredient": "Salt",
 						"quantity": "",
 						"measure": "",
 						"preparation": "course"
 					},
 					{
-						"ingredient": "pepper",
+						"ingredient": "Pepper",
 						"quantity": "",
 						"measure": "",
 						"preparation": "course"
 					},
 					{
-						"ingredient": "garlic powder",
+						"ingredient": "Garlic Powder",
 						"quantity": "",
 						"measure": "",
 						"preparation": ""
@@ -904,79 +904,79 @@ recipesApp.service('recipesService', function() {
 				},
 				"ingredients":  [
 					{
-						"ingredient": "pasta (jumbo shells)",
+						"ingredient": "Pasta (jumbo shells)",
 						"quantity": "16",
 						"measure": "ounces",
 						"preparation": ""
 					},
 					{
-						"ingredient": "mozzarella",
+						"ingredient": "Mozzarella",
 						"quantity": "1",
 						"measure": "pound",
 						"preparation": "diced"
 					},
 					{
-						"ingredient": "asiago cheese",
+						"ingredient": "Asiago Cheese",
 						"quantity": "1",
 						"measure": "cup",
 						"preparation": "shredded"
 					},
 					{
-						"ingredient": "ricotta cheese",
+						"ingredient": "Ricotta Cheese",
 						"quantity": "1.5",
 						"measure": "pounds",
 						"preparation": ""
 					},
 					{
-						"ingredient": "parmesan cheese",
+						"ingredient": "Parmesan Cheese",
 						"quantity": "0.5",
 						"measure": "cup",
 						"preparation": "grated"
 					},
 					{
-						"ingredient": "olive oil",
+						"ingredient": "Olive Oil",
 						"quantity": "2",
 						"measure": "tablespoons",
 						"preparation": ""
 					},
 					{
-						"ingredient": "onion",
+						"ingredient": "Onion",
 						"quantity": "1",
 						"measure": "small",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "garlic",
+						"ingredient": "Garlic",
 						"quantity": "3",
 						"measure": "cloves",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "tomatoes crushed",
+						"ingredient": "Tomatoes",
 						"quantity": "28",
 						"measure": "ounces",
 						"preparation": "crushed"
 					},
 					{
-						"ingredient": "salt",
+						"ingredient": "Salt",
 						"quantity": "",
 						"measure": "",
 						"preparation": ""
 					},
 					{
-						"ingredient": "pepper",
+						"ingredient": "Pepper",
 						"quantity": "",
 						"measure": "",
 						"preparation": ""
 					},
 					{
-						"ingredient": "parsley (fresh)",
+						"ingredient": "Parsley (fresh)",
 						"quantity": "1/4",
 						"measure": "cup",
 						"preparation": "chopped"
 					},
 					{
-						"ingredient": "basil (fresh)",
+						"ingredient": "Basil (fresh)",
 						"quantity": "6",
 						"measure": "leaves",
 						"preparation": "cleaned"
@@ -1000,36 +1000,83 @@ recipesApp.service('recipesService', function() {
 				"Side Dishes"
 			],
 			"ingredients": [
+				"Artichoke Hearts",
 				"Asiago Cheese",
+				"Avacados",
+				"Bacon",
+				"Baguette Bread",
 				"Baking Powder",
 				"Basil (fresh)",
+				"Basil Leaves",
+				"Bourbon",
 				"Bread",
+				"Bread Crumbs",
+				"Brie Cheese",
+				"Butter",
+				"Cayenne Pepper",
+				"Cheddar Cheese",
 				"Chicken",
 				"Chicken Bouillion Cubes",
+				"Cilantro",
 				"Cinnamon",
+				"Colby Cheese",
+				"Colby/Jack Cheese",
 				"Corn",
+				"Cream",
+				"Cream Cheese",
+				"Crescent Rolls",
+				"Creole Mustard Mayonnaise",
+				"Cumin",
 				"Eggs",
 				"Flour (cake)",
+				"Flour",
+				"Frozen Spinach",
 				"Garlic",
+				"Garlic Powder",
 				"Garlic Salt",
+				"Gorgonzola Cheese",
+				"Green Chilies",
+				"Green Onions",
 				"Ground Beef",
+				"Honey",
+				"Jalapenos",
+				"Knorr Vegetable Soup Mix",
+				"Light Corn Syrup",
+				"Light Brown Sugar",
+				"Limes",
+				"Loaf of Round Bread",
+				"Lump Crab Meat",
 				"Mayonnaise",
+				"Mexican Corn",
 				"Milk",
+				"Monterrey Jack Cheese",
 				"Mozzarella",
 				"Olive Oil",
+				"Onion",
 				"Parmesan Cheese",
 				"Parsley (fresh)",
+				"Parsley",
 				"Pasta (jumbo shells)",
 				"Pasta (rotini)",
+				"Pecans",
+				"Pecan Halves",
 				"Pepper",
+				"Pillsbury Pie Crust",
+				"Puff Pastry",
 				"Raisins",
+				"Red Bell Pepper",
 				"Ricotta Cheese",
+				"Ripe Tomatoes",
 				"Salt",
+				"Seasoned Bread Crumbs",
+				"Sour Cream",
 				"Sugar (brown)",
 				"Sugar (white)",
-				"Tomatoes crushed",
+				"Tomatoes",
 				"Vanilla (bean)",
-				"Vanilla (extract)"
+				"Vanilla (extract)",
+				"Vegetable Oil",
+				"Water"
 			]
 		}
 	}
@@ -1057,45 +1104,92 @@ recipesApp.service('recipesService', function() {
 
 	this.getIngredients = function() {
 		return [
+			"Artichoke Hearts",
 			"Asiago Cheese",
+			"Avacados",
+			"Bacon",
+			"Baguette Bread",
 			"Baking Powder",
 			"Basil (fresh)",
+			"Basil Leaves",
+			"Bourbon",
 			"Bread",
+			"Bread Crumbs",
+			"Brie Cheese",
+			"Butter",
+			"Cayenne Pepper",
+			"Cheddar Cheese",
 			"Chicken",
 			"Chicken Bouillion Cubes",
+			"Cilantro",
 			"Cinnamon",
+			"Colby Cheese",
+			"Colby/Jack Cheese",
 			"Corn",
+			"Cream",
+			"Cream Cheese",
+			"Crescent Rolls",
+			"Creole Mustard Mayonnaise",
+			"Cumin",
 			"Eggs",
 			"Flour (cake)",
+			"Flour",
+			"Frozen Spinach",
 			"Garlic",
+			"Garlic Powder",
 			"Garlic Salt",
+			"Gorgonzola Cheese",
+			"Green Chilies",
+			"Green Onions",
 			"Ground Beef",
+			"Honey",
+			"Jalapenos",
+			"Knorr Vegetable Soup Mix",
+			"Light Corn Syrup",
+			"Light Brown Sugar",
+			"Limes",
+			"Loaf of Round Bread",
+			"Lump Crab Meat",
 			"Mayonnaise",
+			"Mexican Corn",
 			"Milk",
+			"Monterrey Jack Cheese",
 			"Mozzarella",
 			"Olive Oil",
+			"Onion",
 			"Parmesan Cheese",
 			"Parsley (fresh)",
+			"Parsley",
 			"Pasta (jumbo shells)",
 			"Pasta (rotini)",
+			"Pecans",
+			"Pecan Halves",
 			"Pepper",
+			"Pillsbury Pie Crust",
+			"Puff Pastry",
 			"Raisins",
+			"Red Bell Pepper",
 			"Ricotta Cheese",
+			"Ripe Tomatoes",
 			"Salt",
+			"Seasoned Bread Crumbs",
+			"Sour Cream",
 			"Sugar (brown)",
 			"Sugar (white)",
-			"Tomatoes crushed",
+			"Tomatoes",
 			"Vanilla (bean)",
-			"Vanilla (extract)"
+			"Vanilla (extract)",
+			"Vegetable Oil",
+			"Water"
 		]
 	}
 
 	this.getAuthorizedUsers = function() {
 		return [
-			'Michael Amore',
-			'Brenda Amore Vickery',
-			'Paul Amore',
-			'Nancy Lascala Milford'
+			"Michael Amore",
+			"Brenda Amore Vickery",
+			"Paul Amore",
+			"Nancy Lascala Milford"
 		]
 	}
 });

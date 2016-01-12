@@ -2,30 +2,34 @@
 This is a web application that will have all of our family recipes listed with pictures, ingredient lists, and cooking directions.
 
 
-### To-Do:
-	- Get Gulp set up to do other cool shit
+### To-Do (first number is cost, second number is value - to help determine prioritization):
+	- Get editRecipeModal to load tags from model with autocomplete functionality
+	- Update addNewRecipeModal and editRecipeModal to display ingredients properly (ingredient, quantity, measure, preparation) with ability to click "plus button" to add additional ingredients
+	- Update adding of new ingredients with autocomplete
+	- Set default heights so layout isn't repainted (jumping) when new elements are added to DOM (i.e. Facebook promise is completed and "Add New Recipe button is added to DOM")
+	- Redirect all pages to /login and only allow our family to view the recipes
+	- Make sure these pages are not indexed by web crawlers
+
+	- Update view to center title/image when less than 768px - 1 - 7
+	- Update model to read from MongoDB - 3 - 9
+	- Add login check so only authorized users (me, mom, Paul, Nancy) can perform CRUD operations - 3 - 8
+	- Create new Mongo collections for category and tags - 2 - 7
+	- Limit category for new recipe entries to the categories that already exist in the database - 3 - 6
+	- Allow HTML inside of recipes inside of recipe directions or include an optional "external link" section for newly created recipes - 3 - 4
+	- Add count of currently filtered/listed recipes - 2 - 4
+	- Fix modal animation - 4 - 2
+	- Get Gulp set up to do other cool shit - 3 - 1
 		- Minify HTML - gulp-minify-html
 		- Minify images
 		- Run unit tests
 		- Minify and concat. JS files
 		- Autoprefixer
 		- Setup gulp-notify - https://www.npmjs.com/package/gulp-notify
+	- Switch Bootstrap over to Sass - 1 - 1
 
-	- Switch Bootstrap over to Sass
-	- Update model to read from MongoDB
-	- Learn how to set different meta data for different page
-	- create login system and move model to database - render data on page from db
-	- Add ability to add new recipes and edit current recipes
-	- Create new Mongo collections for category and tags
-	- Add count of currently filtered/listed recipes
-	- Limit category for new recipe entries to the categories that already exist in the database
-	- Fix modal animation
-	- Make stateful modal windows so each recipe with have a unique URL
-	- Gulp doesn't appear to be concatonating CSS/JS into single file
-	- Start serving the index.html from the dist directory.  Will need to have access to the views directory.
-	- Allow HTML inside of recipes (i.e. inside of recipe directions)
-	- Update view to center title/image when less than 768px
-	- Add login check so only authorized users (me, mom, Paul, Nancy) can perform CRUD operations
+	Unsure (depending on whether recipes should be viewable to public):
+		- Make stateful modal windows so each recipe with have a unique URL - 5 - 
+		- Learn how to set different meta data for different page - 2
 
 
 ### Completed:
@@ -41,15 +45,21 @@ This is a web application that will have all of our family recipes listed with p
 	√ Make sure recipes are sorted alphabetically by category
 	√ Sort tag quick filters alphabetically
 	√ When filtering the recipeSearchResults, the index is changing, so the modal shows the wrong recipe.  Additionally, the sorting is causing the same issue.
+	√ Different users
+		√ Only the owner of a recipe can modify it
+	√ create login system
+	√ Add ability to add new recipes and edit current recipes
 
 
 ### Bugs:
 	- When using quick filters, make the filter only apply to the category/tag.  Right now it filters by all text within the recipe.
+	- Gulp doesn't appear to be concatonating CSS/JS into single file
+	- Start serving the index.html from the dist directory.  Will need to have access to the views directory.
 
 
 ### Feature Requests:
-	- Different users
-		- Only the owner of a recipe can modify it
+	√ Different users
+		√ Only the owner of a recipe can modify it
 		- Each recipe name + owner will be unique (i.e. Brenda's baked maccaroni, Paul's baked maccaroni, Nancy's baked maccaroni, etc.)
 
 
