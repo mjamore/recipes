@@ -5,7 +5,11 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 	var $userSearch = angular.element('#user-search');
 
 	// Get data from recipes, categories, and tags from recipesService
-	$scope.recipes = recipesService.getRecipes();
+	var promise = recipesService.getRecipes();
+	promise.then(function(response) {
+		console.log(response);
+		$scope.recipes = response.data;
+	});
 	$scope.categories = recipesService.getCategories();
 	$scope.tags = recipesService.getTags();
 	
