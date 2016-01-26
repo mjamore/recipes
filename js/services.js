@@ -1,6 +1,6 @@
 recipesApp.service('recipesService', ['$http', '$q', function($http, $q) {
 	var deferred = $q.defer();
-	$http.get('http://localhost:8000/api/recipes').then(function(response) {
+	$http.get('http://mjamore.com:8000/api/recipes').then(function(response) {
 		deferred.resolve(response);
 	}, function(error) {
 		console.log(error);
