@@ -22,6 +22,14 @@ recipesApp.directive('recipe', function() {
 	}
 });
 
+recipesApp.directive('ingredient', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'directives/ingredientInput.html',
+		replace: false
+	}
+});
+
 
 // borrowed from: https://gist.github.com/paulakreuger/b2af1958f3d67f46447e
 recipesApp.filter('capitalize', function() {

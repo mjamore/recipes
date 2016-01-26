@@ -31,9 +31,10 @@
 					<input class="form-control" id="recipe-total-time">
 				</div>
 			</div>
-			<div class="form-group">
-				<label for="recipe-ingredients">Recipe Ingredients:</label>
-				<input class="form-control" id="recipe-ingredients">
+			<div class="form-group ingredients clearfix">
+				<h5>Ingredients:</h5>
+				<ingredient></ingredient>
+				<button type="button" class="btn btn-success pull-right" ng-click="addNewIngredient()">Add Another Ingredient</button>
 			</div>
 			<div class="form-group">
 				<label for="recipe-directions">Recipe Directions:</label>

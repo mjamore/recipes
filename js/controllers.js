@@ -182,10 +182,14 @@ recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', '
 }]);
 
 
-recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
+recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstance', '$compile', function($scope, $uibModalInstance, $compile) {
 	$scope.cancel = function () {
 		$uibModalInstance.dismiss('cancel');
 	};
+
+	$scope.addNewIngredient = function() {
+		$('.add-new-recipe-modal .ingredients button').before($compile('<ingredient />')($scope));
+	}
 }]);
 
 

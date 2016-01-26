@@ -1,4 +1,26 @@
 // Styling for addNewRecipeModal.html
 .add-new-recipe-modal {
-
+	h5 {
+		font-weight: 700;
+	}
+	.ingredients {
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		padding: 10px;
+		.input-group {
+			margin-bottom: 10px;
+		}
+		.col-md-3 {
+			padding-left: 0;
+			&:last-of-type {
+				padding-right: 0;
+			}
+			.form-control {
+				border-radius: 4px;
+			}
+		}
+		button {
+			margin-top: 10px;
+		}
+	}
 }
