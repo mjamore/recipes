@@ -1103,12 +1103,16 @@ recipesApp.service('recipesService', ['$http', '$q', function($http, $q) {
 		]
 	}
 
+
+	var getTagsDeferred = $q.defer();
+	$http.get('http://mjamore.com:8000/api/tags').then(function(response) {
+		getTagsDeferred.resolve(response);
+	}, function(error) {
+		console.log(error);
+	});
+
 	this.getTags = function() {
-		return [
-			"favorites",
-			"Italian",
-			"Easy"
-		]
+		return getTagsDeferred.promise;
 	}
 
 	this.getIngredients = function() {

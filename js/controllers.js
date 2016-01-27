@@ -4,14 +4,20 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 	// Cache selectors
 	var $userSearch = angular.element('#user-search');
 
-	// Get data from recipes, categories, and tags from recipesService
-	var promise = recipesService.getRecipes();
-	promise.then(function(response) {
+	// Get data from recipes from recipesService
+	var recipesPromise = recipesService.getRecipes();
+	recipesPromise.then(function(response) {
 		console.log(response);
 		$scope.recipes = response.data;
 	});
 	$scope.categories = recipesService.getCategories();
-	$scope.tags = recipesService.getTags();
+	
+	// Get data from tags from recipesService
+	var tagsPromise = recipesService.getTags();
+	tagsPromise.then(function(response) {
+		console.log(response);
+		$scope.tags = response.data;
+	});
 	
 	$scope.animationsEnabled = true;
 	$scope.isModalOpened = false;
@@ -186,7 +192,20 @@ recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', '
 }]);
 
 
-recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstance', '$compile', function($scope, $uibModalInstance, $compile) {
+recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstance', '$compile', 'recipesService', '$http', function($scope, $uibModalInstance, $compile, recipesService, $http) {
+
+	// Get data from tags from recipesService
+	var tagsPromise = recipesService.getTags();
+	tagsPromise.then(function(response) {
+		$scope.tags = response.data;
+	});
+	$scope.loadTags = function(query) {
+		return $http.get('http://mjamore.com:8000/api/tags').then(function(response) {
+			return tags = response.data;
+		});
+	}
+
+
 	$scope.cancel = function () {
 		$uibModalInstance.dismiss('cancel');
 	};

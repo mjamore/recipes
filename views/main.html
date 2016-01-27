@@ -38,7 +38,7 @@
 		<div class="tag-filters">
 			<h4>Tags</h4>
 			<ul>
-				<li ng-repeat="tag in tags|orderBy:'toString()'"><a href="#" class="btn btn-info capitalize" ng-click="filterRecipes($event)">{{tag}}</a></li>
+				<li ng-repeat="tag in tags|orderBy:'toString()'"><a href="#" class="btn btn-info capitalize" ng-click="filterRecipes($event)">{{tag.text}}</a></li>
 			</ul>
 		</div>
 	</div>

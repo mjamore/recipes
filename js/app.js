@@ -1,4 +1,4 @@
-var recipesApp = angular.module('recipesApp', ['ngRoute', 'ui.bootstrap', 'facebook']);
+var recipesApp = angular.module('recipesApp', ['ngRoute', 'ui.bootstrap', 'facebook', 'ngTagsInput']);
 
 recipesApp.config(['$routeProvider', '$locationProvider', 'FacebookProvider', function($routeProvider, $locationProvider, FacebookProvider) {
 	$routeProvider
