@@ -1,0 +1,17 @@
+<div class="input-group">
+	<div class="col-md-2">
+		<input class="form-control" name="ingredient-name" id="ingredient-name" placeholder="Name" value="{{ingredient.ingredient}}" required>
+	</div>
+	<div class="col-md-2">
+		<input class="form-control" name="ingredient-quantity" id="ingredient-quantity" placeholder="Quantity" value="{{ingredient.quantity}}" required>
+	</div>
+	<div class="col-md-2">
+		<input class="form-control" name="ingredient-measure" id="ingredient-measure" placeholder="Measure" value="{{ingredient.measure}}" required>
+	</div>
+	<div class="col-md-2">
+		<input class="form-control" name="ingredient-preparation" id="ingredient-preparation" value="{{ingredient.preparation}}" placeholder="Preparation">
+	</div>
+	<div class="col-md-2">
+		<button type="button" class="btn btn-danger glyphicon glyphicon-minus-sign" ng-click="removeIngredient()"></button>
+	</div>
+</div>

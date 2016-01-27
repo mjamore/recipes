@@ -22,10 +22,18 @@ recipesApp.directive('recipe', function() {
 	}
 });
 
-recipesApp.directive('ingredient', function() {
+recipesApp.directive('addIngredient', function() {
 	return {
 		restrict: 'E',
-		templateUrl: 'directives/ingredientInput.html',
+		templateUrl: 'directives/add-ingredient.html',
+		replace: false
+	}
+});
+
+recipesApp.directive('editIngredient', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'directives/edit-ingredient.html',
 		replace: false
 	}
 });

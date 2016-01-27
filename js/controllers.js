@@ -168,7 +168,7 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 }]);
 
 
-recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', 'recipes', function($scope, $uibModalInstance, recipes) {
+recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', 'recipes', '$compile', function($scope, $uibModalInstance, recipes, $compile) {
 	$scope.selectedIndex = recipes.pop();
 	$scope.recipes = recipes[0];
 
@@ -179,6 +179,10 @@ recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', '
 	$scope.cancel = function () {
 		$uibModalInstance.dismiss('cancel');
 	};
+
+	$scope.addNewIngredient = function() {
+		$('.edit-recipe-modal .ingredients button').before($compile('<add-ingredient />')($scope));
+	}
 }]);
 
 
@@ -188,7 +192,7 @@ recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstan
 	};
 
 	$scope.addNewIngredient = function() {
-		$('.add-new-recipe-modal .ingredients button').before($compile('<ingredient />')($scope));
+		$('.add-new-recipe-modal .ingredients button').before($compile('<add-ingredient />')($scope));
 	}
 }]);
 

@@ -1,5 +1,10 @@
 // Styling for addNewRecipeModal.html
 .add-new-recipe-modal {
+
+}
+
+.add-new-recipe-modal,
+.edit-recipe-modal {
 	h5 {
 		font-weight: 700;
 	}
@@ -19,7 +24,7 @@
 				border-radius: 4px;
 			}
 		}
-		button {
+		button.btn-success {
 			margin-top: 10px;
 		}
 	}

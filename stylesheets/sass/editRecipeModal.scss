@@ -1,7 +1,10 @@
 // Styling related to editRecipesModal.html
 .edit-recipe-modal {
-	textarea {
-		resize: vertical;
-		height: 130px;
+	.col-md-2 {
+		width: 23%;
+		padding-left: 0;
+		&:last-of-type {
+			width: 8%;
+		}
 	}
 }
