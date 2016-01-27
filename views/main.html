@@ -32,7 +32,7 @@
 		<div class="meal-type-filters">
 			<h4>Category</h4>
 			<ul>
-				<li ng-repeat="category in categories" class="{{category}}"><a href="#" class="btn btn-info capitalize" ng-click="filterRecipes($event)">{{category}}</a></li>
+				<li ng-repeat="category in categories" class="{{category.category}}"><a href="#" class="btn btn-info capitalize" ng-click="filterRecipes($event)">{{category.category}}</a></li>
 			</ul>
 		</div>
 		<div class="tag-filters">

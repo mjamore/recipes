@@ -998,112 +998,24 @@ recipesApp.service('recipesService', ['$http', '$q', function($http, $q) {
 	}
 
 
-	this.getRecipesMetaData = function() {
-		return {
-			"categories": [
-				"Appetizers",
-				"Breads",
-				"Breakfast",
-				"Desserts",
-				"Entrees",
-				"Side Dishes"
-			],
-			"ingredients": [
-				"Artichoke Hearts",
-				"Asiago Cheese",
-				"Avacados",
-				"Bacon",
-				"Baguette Bread",
-				"Baking Powder",
-				"Basil (fresh)",
-				"Basil Leaves",
-				"Bourbon",
-				"Bread",
-				"Bread Crumbs",
-				"Brie Cheese",
-				"Butter",
-				"Cayenne Pepper",
-				"Cheddar Cheese",
-				"Chicken",
-				"Chicken Bouillion Cubes",
-				"Cilantro",
-				"Cinnamon",
-				"Colby Cheese",
-				"Colby/Jack Cheese",
-				"Corn",
-				"Cream",
-				"Cream Cheese",
-				"Crescent Rolls",
-				"Creole Mustard Mayonnaise",
-				"Cumin",
-				"Eggs",
-				"Flour (cake)",
-				"Flour",
-				"Frozen Spinach",
-				"Garlic",
-				"Garlic Powder",
-				"Garlic Salt",
-				"Gorgonzola Cheese",
-				"Green Chilies",
-				"Green Onions",
-				"Ground Beef",
-				"Honey",
-				"Jalapenos",
-				"Knorr Vegetable Soup Mix",
-				"Light Corn Syrup",
-				"Light Brown Sugar",
-				"Limes",
-				"Loaf of Round Bread",
-				"Lump Crab Meat",
-				"Mayonnaise",
-				"Mexican Corn",
-				"Milk",
-				"Monterrey Jack Cheese",
-				"Mozzarella",
-				"Olive Oil",
-				"Onion",
-				"Parmesan Cheese",
-				"Parsley (fresh)",
-				"Parsley",
-				"Pasta (jumbo shells)",
-				"Pasta (rotini)",
-				"Pecans",
-				"Pecan Halves",
-				"Pepper",
-				"Pillsbury Pie Crust",
-				"Puff Pastry",
-				"Raisins",
-				"Red Bell Pepper",
-				"Ricotta Cheese",
-				"Ripe Tomatoes",
-				"Salt",
-				"Seasoned Bread Crumbs",
-				"Sour Cream",
-				"Sugar (brown)",
-				"Sugar (white)",
-				"Tomatoes",
-				"Vanilla (bean)",
-				"Vanilla (extract)",
-				"Vegetable Oil",
-				"Water"
-			]
-		}
-	}
+
+
+	// Return Categories
+	var getCategoriesDeferred = $q.defer();
+	$http.get('http://mjamore.com:8000/api/categories').then(function(response) {
+		getCategoriesDeferred.resolve(response);
+	}, function(error) {
+		console.log(error);
+	});
 
 	this.getCategories = function() {
-		return [
-			"Appetizers",
-			"Breads",
-			"Breakfast",
-			"Desserts",
-			"Entrees",
-			"Miscellaneous",
-			"Salads and Dressings",
-			"Side Dishes"
-		]
+		return getCategoriesDeferred.promise;
 	}
 
+	
 
+
+	// Return Tags
 	var getTagsDeferred = $q.defer();
 	$http.get('http://mjamore.com:8000/api/tags').then(function(response) {
 		getTagsDeferred.resolve(response);
@@ -1115,6 +1027,10 @@ recipesApp.service('recipesService', ['$http', '$q', function($http, $q) {
 		return getTagsDeferred.promise;
 	}
 
+
+
+
+	// Return Ingredients
 	this.getIngredients = function() {
 		return [
 			"Artichoke Hearts",
@@ -1197,6 +1113,9 @@ recipesApp.service('recipesService', ['$http', '$q', function($http, $q) {
 		]
 	}
 
+
+
+	// Return Authorized Users
 	this.getAuthorizedUsers = function() {
 		return [
 			"Michael Amore",

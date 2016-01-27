@@ -4,18 +4,21 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 	// Cache selectors
 	var $userSearch = angular.element('#user-search');
 
-	// Get data from recipes from recipesService
+	// Get recipes from recipesService
 	var recipesPromise = recipesService.getRecipes();
 	recipesPromise.then(function(response) {
-		console.log(response);
 		$scope.recipes = response.data;
 	});
-	$scope.categories = recipesService.getCategories();
+
+	// Get categories from recipesService
+	var categoriesPromise = recipesService.getCategories();
+	categoriesPromise.then(function(response) {
+		$scope.categories = response.data;
+	});
 	
-	// Get data from tags from recipesService
+	// Get tags from recipesService
 	var tagsPromise = recipesService.getTags();
 	tagsPromise.then(function(response) {
-		console.log(response);
 		$scope.tags = response.data;
 	});
 	
