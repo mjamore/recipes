@@ -194,7 +194,7 @@ recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', '
 
 	$scope.cancel = function () {
 		$uibModalInstance.dismiss('cancel');
-	};
+	}
 
 	$scope.addNewIngredient = function() {
 		$('.edit-recipe-modal .ingredients button').before($compile('<add-ingredient />')($scope));
@@ -203,6 +203,14 @@ recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', '
 
 
 recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstance', '$compile', 'recipesService', '$http', function($scope, $uibModalInstance, $compile, recipesService, $http) {
+
+	$scope.nameHasAlreadyBeenUsed = false;
+
+	// Get recipes from recipesService
+	var recipesPromise = recipesService.getRecipes();
+	recipesPromise.then(function(response) {
+		$scope.recipes = response.data;
+	});
 
 	// Get data from tags from recipesService
 	var tagsPromise = recipesService.getTags();
@@ -221,10 +229,30 @@ recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstan
 		$scope.categories = response.data;
 	});
 
+	$scope.hasNameAlreadyBeenUsed = function(event) {
+		var recipeName = event.target.value.toLowerCase();
+		var user = $('.username').text().toLowerCase();
+
+		// get all records from DB for this recipe name
+		$scope.recipes.forEach(function(arrayItem) {
+			if(arrayItem.name.toLowerCase() === recipeName) {
+				if(arrayItem.author.toLowerCase() === user) {
+					// To-Do: display error message to user and do not allow form to be submitted until fixed
+					console.log('User already has a recipe with this name. Need to display error message to user and do not allow form to be submitted until fixed.');
+					$scope.nameHasAlreadyBeenUsed = true;
+					// $scope.$apply();
+					console.log($scope.nameHasAlreadyBeenUsed);
+				}
+			}
+		});
+
+		$scope.nameHasAlreadyBeenUsed = false;
+	}
+
 
 	$scope.cancel = function () {
 		$uibModalInstance.dismiss('cancel');
-	};
+	}
 
 	$scope.addNewIngredient = function() {
 		$('.add-new-recipe-modal .ingredients button').before($compile('<add-ingredient />')($scope));
