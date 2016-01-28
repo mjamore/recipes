@@ -177,7 +177,14 @@ recipesApp.controller('mainController', ['$scope', '$uibModal', 'recipesService'
 }]);
 
 
-recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', 'recipes', '$compile', function($scope, $uibModalInstance, recipes, $compile) {
+recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', 'recipes', 'recipesService', '$compile', function($scope, $uibModalInstance, recipes, recipesService, $compile) {
+	
+	// Get categories from recipesService
+	var categoriesPromise = recipesService.getCategories();
+	categoriesPromise.then(function(response) {
+		$scope.categories = response.data;
+	});
+
 	$scope.selectedIndex = recipes.pop();
 	$scope.recipes = recipes[0];
 
@@ -208,6 +215,12 @@ recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstan
 		});
 	}
 
+	// Get categories from recipesService
+	var categoriesPromise = recipesService.getCategories();
+	categoriesPromise.then(function(response) {
+		$scope.categories = response.data;
+	});
+
 
 	$scope.cancel = function () {
 		$uibModalInstance.dismiss('cancel');
@@ -219,6 +232,10 @@ recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstan
 }]);
 
 
-recipesApp.controller('editRecipesController', ['$scope', function($scope) {
-	$scope.test = 'editRecipesController';
+recipesApp.controller('editRecipesController', ['$scope', 'recipesService', function($scope, recipesService) {
+	// Get categories from recipesService
+	var categoriesPromise = recipesService.getCategories();
+	categoriesPromise.then(function(response) {
+		$scope.categories = response.data;
+	});
 }]);

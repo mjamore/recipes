@@ -11,7 +11,9 @@
 			</div>
 			<div class="form-group">
 				<label for="recipe-category">Recipe Category:</label>
-				<input class="form-control" id="recipe-category">
+				<select id="recipe-category" class="form-control">
+					<option ng-repeat="category in categories" value="{{category.category}}">{{category.category}}</option>
+				</select>
 			</div>
 			<div class="form-group">
 				<label for="recipe-tags">Recipe Tags:</label>

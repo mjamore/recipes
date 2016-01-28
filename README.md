@@ -3,12 +3,11 @@ This is a web application that will have all of our family recipes listed with p
 
 
 ### To-Do (first number is cost, second number is value - to help determine prioritization):
-	- Get editRecipeModal to load tags from model with autocomplete functionality
-	- Update addNewRecipeModal and editRecipeModal to display ingredients properly (ingredient, quantity, measure, preparation) with ability to click "plus button" to add additional ingredients
 	- Update adding of new ingredients with autocomplete
 	- Set default heights so layout isn't repainted (jumping) when new elements are added to DOM (i.e. Facebook promise is completed and "Add New Recipe button is added to DOM")
 	- Redirect all pages to /login and only allow our family to view the recipes
 	- Make sure these pages are not indexed by web crawlers
+	- Add validation to addNewRecipeModal recipe name field on blur that verifies if the user already has a recipe with the same name
 
 	- Update view to center title/image when less than 768px - 1 - 7
 	- Update model to read from MongoDB - 3 - 9
@@ -49,12 +48,16 @@ This is a web application that will have all of our family recipes listed with p
 		√ Only the owner of a recipe can modify it
 	√ create login system
 	√ Add ability to add new recipes and edit current recipes
+	√ Get editRecipeModal to load tags from model with autocomplete functionality
+	√ Update addNewRecipeModal and editRecipeModal to display ingredients properly (ingredient, quantity, measure, preparation) with ability to click "plus button" to add additional ingredients
+
 
 
 ### Bugs:
 	- When using quick filters, make the filter only apply to the category/tag.  Right now it filters by all text within the recipe.
 	- Gulp doesn't appear to be concatonating CSS/JS into single file
 	- Start serving the index.html from the dist directory.  Will need to have access to the views directory.
+	- Edit menu is not setting the 'selected' attribute on the category of the selected recipe.
 
 
 ### Feature Requests:
