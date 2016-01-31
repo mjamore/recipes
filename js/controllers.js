@@ -202,7 +202,7 @@ recipesApp.controller('recipeModalController', ['$scope', '$uibModalInstance', '
 }]);
 
 
-recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstance', '$compile', 'recipesService', '$http', function($scope, $uibModalInstance, $compile, recipesService, $http) {
+recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstance', '$compile', 'recipesService', function($scope, $uibModalInstance, $compile, recipesService) {
 
 	$scope.nameHasAlreadyBeenUsed = false;
 
@@ -218,9 +218,7 @@ recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstan
 		$scope.tags = response.data;
 	});
 	$scope.loadTags = function(query) {
-		return $http.get('http://mjamore.com:8000/api/tags').then(function(response) {
-			return tags = response.data;
-		});
+		return $scope.tags;
 	}
 
 	// Get categories from recipesService
@@ -233,7 +231,7 @@ recipesApp.controller('addNewRecipeModalController', ['$scope', '$uibModalInstan
 		var recipeName = event.target.value.toLowerCase();
 		var user = $('.username').text().toLowerCase();
 
-		// get all records from DB for this recipe name
+		// Check all recipes names against the name the user entered
 		$scope.recipes.forEach(function(arrayItem) {
 			if(arrayItem.name.toLowerCase() === recipeName) {
 				if(arrayItem.author.toLowerCase() === user) {
@@ -266,4 +264,13 @@ recipesApp.controller('editRecipesController', ['$scope', 'recipesService', func
 	categoriesPromise.then(function(response) {
 		$scope.categories = response.data;
 	});
+
+	// Get data from tags from recipesService
+	var tagsPromise = recipesService.getTags();
+	tagsPromise.then(function(response) {
+		$scope.tags = response.data;
+	});
+	$scope.loadTags = function(query) {
+		return $scope.tags;
+	}
 }]);
